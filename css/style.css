@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* body {
+  background: #f3eeee;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.6;
+} */
+
+body {
+  background: linear-gradient(to bottom, #f3f3f3, #ffffff);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#navbar #logo img {
+  height: 100px;
+  width: auto;
+  margin-right: 30px;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+#navbar #moto img {
+  height: 100px;
+  width: auto;
+  margin-left: 30px;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+.navbar-biasa a {
+  position: relative;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  border-radius: 8px;
+}
+
+.navbar-biasa a:hover {
+  color: #fff;
+}
+
+.navbar-biasa a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4bde38;
+  border-radius: 8px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.navbar-biasa a:hover::before {
+  opacity: 1;
+}
+
+/* Content styling */
+.content {
+  margin-top: 40px;
+  padding: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  color: #4bde38;
+}
+
+.content p {
+  font-size: 1.1em;
+  color: #666;
+  margin-top: 15px;
+  line-height: 1.8;
+}
+
+#background-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.video-container {
+  position: relative;
+  margin-top: 100px;
+  width: 80%;
+  margin: 100px auto 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#volume-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(179, 179, 179, 0.8);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 0;
+  transition: background 0.3s ease;
+}
+
+#volume-btn:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Fungsi Responsive Navbar */
+/* ketika web dibuka di layar kecil, logo, navbar, video akan menyesuaikan */
+@media (max-width: 768px) {
+  #navbar {
+    padding: 0 20px;
+    height: 60px;
+  }
+
+  #navbar #logo img,
+  #navbar #moto img {
+    height: 40px;
+  }
+
+  .navbar-biasa a {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+
+  .video-container {
+    width: 100%;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #279718;
+  color: #fff;
+  padding: 40px 0;
+  margin-top: 100px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-links h4,
+.company-info h4,
+.call-us h4 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.company-info h5 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.footer-links ul li,
+.company-info p {
+  margin-bottom: 15px;
+}
+
+.footer-links ul li a,
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover,
+.footer-bottom a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.footer-bottom a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.call-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.call-icons img {
+  width: 30px;
+}
+
+.call-us h4 {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.call-us img {
+  width: 30px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.banner {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.banner img {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}

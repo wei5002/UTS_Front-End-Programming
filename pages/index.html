@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitSteps: Small Steps Big Changes</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="index.html" id="logo"
+        ><img src="../assets/images/logo.png" alt="FitSteps Logo"
+      /></a>
+      <div class="navbar-biasa">
+        <a href="index.html">Home</a>
+        <a href="#">Tips & Workout</a>
+        <a href="#">Trendy Shoes</a>
+        <a href="#">Health Benefits</a>
+        <a href="#">Contact Us</a>
+        <a href="events.html">Upcoming Events</a>
+      </div>
+      <a href="index.html" id="moto"
+        ><img src="../assets/images/moto.png" alt="FitSteps Moto"
+      /></a>
+    </nav>
+
+    <div class="video-container">
+      <video id="background-video" autoplay muted loop>
+        <source src="../assets/videos/video-opening.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <button id="volume-btn" onclick="toggleVolume()">🔈</button>
+    </div>
+
+    <!-- Content with fade-in effect -->
+    <div class="content fade-in">
+      <h1>Welcome to FitSteps!</h1>
+      <p>
+        FitSteps is more than just a fitness platform. It's your gateway to a
+        healthier, more active lifestyle. Explore tips, workouts, trendy shoes,
+        and more, designed to help you take small steps towards big changes!
+      </p>
+      <p>
+        Whether you're looking to find the best workouts, understand health
+        benefits, or stay up-to-date with the latest in sports lifestyle trends,
+        FitSteps has something for everyone.
+      </p>
+    </div>
+
+    <!-- Banner with fade-in effect -->
+    <div class="banner fade-in">
+      <img src="../assets/images/banner.png" alt="FitSteps Banner" />
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="company-info">
+          <img
+            src="../assets/images/logo.png"
+            alt="FitSteps Logo"
+            class="footer-logo"
+          />
+          <h5>FitSteps</h5>
+          <p>
+            Letjen S. Parman St No.1, RT.6/RW.16, Tomang, Grogol petamburan,<br />
+            West Jakarta City, Jakarta 11440
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links">
+          <h4>LINKS</h4>
+          <ul>
+            <li><a href="#">Upcoming Events</a></li>
+            <li><a href="#">Blogs & Articles</a></li>
+            <li><a href="#">Trendy Shoes</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Call Us -->
+        <div class="Call Us">
+          <h4>Call Us</h4>
+          <div class="Call-icons">
+            <a href="#"><img src="call-icon.png" alt="0123-456-789" /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; Copyright 2024 FitSteps. All Rights Reserved.</p>
+        <p>Developed by Kelompok 6</p>
+      </div>
+    </footer>
+
+    <script>
+      const video = document.getElementById("background-video");
+      const volumeBtn = document.getElementById("volume-btn");
+
+      function toggleVolume() {
+        if (video.muted) {
+          video.muted = false;
+          volumeBtn.textContent = "🔊";
+        } else {
+          video.muted = true;
+          volumeBtn.textContent = "🔈";
+        }
+      }
+
+      // Fungsi Fade-In saat user scrool
+      const faders = document.querySelectorAll(".fade-in");
+
+      const appearOptions = {
+        threshold: 0,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const appearOnScroll = new IntersectionObserver(function (
+        entries,
+        appearOnScroll
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            entry.target.classList.add("appear");
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions);
+
+      faders.forEach((fader) => {
+        appearOnScroll.observe(fader);
+      });
+    </script>
+  </body>
+</html>
