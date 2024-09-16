@@ -281,3 +281,108 @@ footer {
   margin: 0 auto;
   display: block;
 }
+
+/* POP UP BROSUR */
+.popup-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-background.hidden {
+  display: none;
+}
+
+.popup-content {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  animation: bounceIn 0.5s ease;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  animation: bounceIn 0.5s ease;
+}
+
+.close-btn {
+  display: inline-block;
+  background-color: #279718;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  animation: bounceIn 3s ease;
+}
+
+.close-btn:hover {
+  background-color: #4bde38;
+}
+
+/* Keyframes efek bounce */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0; /* opacity 0 tak terlihat */
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1; /* opacitiy 1 mulai terlihat dengan skala 110% dari ukuran normal */
+  }
+  70% {
+    transform: scale(0.9); /* skala berkurang ke ukuran 90% dari normal */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1; /* skala kembali ke ukuran normal dengan opacity 1 */
+  }
+}
+
+/* Style untuk muncul 3 Ways */
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scroll-image {
+  width: 30%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.image1.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image2.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image3.appear {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -24,6 +24,17 @@
       /></a>
     </nav>
 
+    <div class="popup-background hidden" id="popup">
+      <div class="popup-content">
+        <img
+          src="../assets/images/brosur.png"
+          alt="Brosur"
+          class="popup-image"
+        />
+        <button class="close-btn" id="closeBtn">Close</button>
+      </div>
+    </div>
+
     <div class="video-container">
       <video id="background-video" autoplay muted loop>
         <source src="../assets/videos/video-opening.mp4" type="video/mp4" />
@@ -33,7 +44,6 @@
       <button id="volume-btn" onclick="toggleVolume()">🔈</button>
     </div>
 
-    <!-- Content with fade-in effect -->
     <div class="content fade-in">
       <h1>Welcome to FitSteps!</h1>
       <p>
@@ -48,52 +58,29 @@
       </p>
     </div>
 
-    <!-- Banner with fade-in effect -->
+    <div class="images-container fade-in">
+      <img
+        src="../assets/images/3Ways/1.png"
+        alt="Image 1"
+        class="scroll-image image1"
+      />
+      <img
+        src="../assets/images/3Ways/2.png"
+        alt="Image 2"
+        class="scroll-image image2"
+      />
+      <img
+        src="../assets/images/3Ways/3.png"
+        alt="Image 3"
+        class="scroll-image image3"
+      />
+    </div>
+
     <div class="banner fade-in">
       <img src="../assets/images/banner.png" alt="FitSteps Banner" />
     </div>
 
-    <footer>
-      <div class="footer-container">
-        <div class="company-info">
-          <img
-            src="../assets/images/logo.png"
-            alt="FitSteps Logo"
-            class="footer-logo"
-          />
-          <h5>FitSteps</h5>
-          <p>
-            Letjen S. Parman St No.1, RT.6/RW.16, Tomang, Grogol petamburan,<br />
-            West Jakarta City, Jakarta 11440
-          </p>
-        </div>
-
-        <!-- Links -->
-        <div class="footer-links">
-          <h4>LINKS</h4>
-          <ul>
-            <li><a href="#">Upcoming Events</a></li>
-            <li><a href="#">Blogs & Articles</a></li>
-            <li><a href="#">Trendy Shoes</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <!-- Call Us -->
-        <div class="Call Us">
-          <h4>Call Us</h4>
-          <div class="Call-icons">
-            <a href="#"><img src="call-icon.png" alt="0123-456-789" /></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Copyright -->
-      <div class="footer-bottom">
-        <p>&copy; Copyright 2024 FitSteps. All Rights Reserved.</p>
-        <p>Developed by Kelompok 6</p>
-      </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script>
       const video = document.getElementById("background-video");
@@ -108,6 +95,20 @@
           volumeBtn.textContent = "🔈";
         }
       }
+
+      // fungsi pop up brosur
+      const popup = document.getElementById("popup");
+      const closeBtn = document.getElementById("closeBtn");
+
+      // Memunculkan pop up brosur saat web direfresh
+      window.onload = function () {
+        popup.classList.remove("hidden");
+      };
+
+      // Fungsi untuk close pop up
+      closeBtn.addEventListener("click", function () {
+        popup.classList.add("hidden");
+      });
 
       // Fungsi Fade-In saat user scrool
       const faders = document.querySelectorAll(".fade-in");
@@ -134,6 +135,20 @@
 
       faders.forEach((fader) => {
         appearOnScroll.observe(fader);
+      });
+
+      // Menggunakan fungsi fetch untuk panggil file footer.html
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+
+      // Fungsi untuk muncul gambar 3 Ways secara fade-in
+      const images = document.querySelectorAll(".scroll-image");
+
+      images.forEach((image, index) => {
+        appearOnScroll.observe(image);
       });
     </script>
   </body>

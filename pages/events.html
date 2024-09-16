@@ -41,48 +41,18 @@
       </p>
     </div>
 
-    <footer>
-      <div class="footer-container">
-        <div class="company-info">
-          <img
-            src="../assets/images/logo.png"
-            alt="FitSteps Logo"
-            class="footer-logo"
-          />
-          <h5>FitSteps</h5>
-          <p>
-            Letjen S. Parman St No.1, RT.6/RW.16, Tomang, Grogol petamburan,<br />
-            West Jakarta City, Jakarta 11440
-          </p>
-        </div>
-
-        <!-- Links -->
-        <div class="footer-links">
-          <h4>LINKS</h4>
-          <ul>
-            <li><a href="#">Upcoming Events</a></li>
-            <li><a href="#">Blogs & Articles</a></li>
-            <li><a href="#">Trendy Shoes</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <!-- Call Us -->
-        <div class="Call Us">
-          <h4>Call Us</h4>
-          <div class="Call-icons">
-            <a href="#"><img src="call-icon.png" alt="0123-456-789" /></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Copyright -->
-      <div class="footer-bottom">
-        <p>&copy; Copyright 2024 FitSteps. All Rights Reserved.</p>
-        <p>Developed by Kelompok 6</p>
-      </div>
-    </footer>
+    <!-- Load footer from external file -->
+    <div id="footer-placeholder"></div>
   </body>
+
+  <!-- 
+Berikut tiga tahap motivasi untuk memulai olahraga:
+
+Tentukan Tujuan yang Jelas: Menetapkan tujuan spesifik, seperti menurunkan berat badan, meningkatkan stamina, atau membangun otot, dapat memberikan arah yang jelas. Tuliskan tujuan ini dan jadikan sebagai pengingat mengapa kamu ingin berolahraga.
+
+Mulai dengan Langkah Kecil: Tidak perlu langsung memaksakan diri. Mulailah dengan latihan yang ringan dan singkat, seperti berjalan kaki 15 menit setiap hari. Dengan memulai dari yang kecil, tubuh dan pikiran akan lebih mudah beradaptasi, sehingga rutinitas olahraga bisa terasa lebih ringan dan menyenangkan.
+
+Rayakan Kemajuan Kecil: Hargai setiap pencapaian, sekecil apapun itu. Apakah itu berhasil berolahraga 3 hari berturut-turut atau berhasil menambah durasi latihan, merayakan kemajuan akan menambah rasa percaya diri dan semangat untuk terus berolahraga. -->
 
   <script>
     const video = document.getElementById("background-video");
@@ -97,5 +67,12 @@
         volumeBtn.textContent = "🔈";
       }
     }
+
+    // Menggunakan fetch untuk memuat file footer.html
+    fetch("footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
   </script>
 </html>
