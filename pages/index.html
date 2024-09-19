@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <!-- TOMBOL Back to Top -->
+    <button id="backToTopBtn" class="back-to-top">
+      <img
+        src="../assets/images/green-up.png"
+        alt="Back to Top"
+        id="backToTopImg"
+      />
+    </button>
+
     <nav id="navbar">
       <a href="index.html" id="logo"
         ><img src="../assets/images/logo.png" alt="FitSteps Logo"
@@ -17,7 +26,10 @@
         <a href="#">Trendy Shoes</a>
         <a href="#">Health Benefits</a>
         <a href="#">Contact Us</a>
-        <a href="events.html">Upcoming Events</a>
+        <a href="/pages/events.html">Upcoming Events</a>
+
+        <!-- Tombol Mode Terang/Gelap -->
+        <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
       </div>
       <a href="index.html" id="moto"
         ><img src="../assets/images/moto.png" alt="FitSteps Moto"
@@ -47,15 +59,17 @@
     <div class="content fade-in">
       <h1>Welcome to FitSteps!</h1>
       <p>
-        FitSteps is more than just a fitness platform. It's your gateway to a
-        healthier, more active lifestyle. Explore tips, workouts, trendy shoes,
-        and more, designed to help you take small steps towards big changes!
+        FitSteps lebih dari sekadar platform kebugaran—ini adalah pintu menuju
+        gaya hidup sehat dan aktif! Ayo, temukan tips, latihan, sepatu tren, dan
+        banyak lagi yang dirancang khusus untuk membantu Anda mengambil langkah
+        kecil menuju perubahan besar!
       </p>
       <p>
-        Whether you're looking to find the best workouts, understand health
-        benefits, or stay up-to-date with the latest in sports lifestyle trends,
-        FitSteps has something for everyone.
+        Ingin menemukan latihan terbaik, memahami manfaat kesehatan, atau
+        mengikuti tren gaya hidup olahraga terkini?
       </p>
+      <br />
+      <h4>FitSteps punya semuanya untuk Anda!</h4>
     </div>
 
     <div class="images-container fade-in">
@@ -76,80 +90,24 @@
       />
     </div>
 
+    <div class="cta-section fade-in">
+      <h2>MULAI BERAKTIVITAS</h2>
+      <p>
+        Cari tahu apa saja manfaat berolahraga sekarang, mulai gaya hidup
+        sehatmu hari ini juga!
+      </p>
+      <a href="#" class="cta-button">HEALTH BENEFITS</a>
+    </div>
+
     <div class="banner fade-in">
       <img src="../assets/images/banner.png" alt="FitSteps Banner" />
     </div>
 
+    <div id="newsletter-placeholder" class="fade-in"></div>
+
     <div id="footer-placeholder"></div>
 
-    <script>
-      const video = document.getElementById("background-video");
-      const volumeBtn = document.getElementById("volume-btn");
-
-      function toggleVolume() {
-        if (video.muted) {
-          video.muted = false;
-          volumeBtn.textContent = "🔊";
-        } else {
-          video.muted = true;
-          volumeBtn.textContent = "🔈";
-        }
-      }
-
-      // fungsi pop up brosur
-      const popup = document.getElementById("popup");
-      const closeBtn = document.getElementById("closeBtn");
-
-      // Memunculkan pop up brosur saat web direfresh
-      window.onload = function () {
-        popup.classList.remove("hidden");
-      };
-
-      // Fungsi untuk close pop up
-      closeBtn.addEventListener("click", function () {
-        popup.classList.add("hidden");
-      });
-
-      // Fungsi Fade-In saat user scrool
-      const faders = document.querySelectorAll(".fade-in");
-
-      const appearOptions = {
-        threshold: 0,
-        rootMargin: "0px 0px -100px 0px",
-      };
-
-      const appearOnScroll = new IntersectionObserver(function (
-        entries,
-        appearOnScroll
-      ) {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            return;
-          } else {
-            entry.target.classList.add("appear");
-            appearOnScroll.unobserve(entry.target);
-          }
-        });
-      },
-      appearOptions);
-
-      faders.forEach((fader) => {
-        appearOnScroll.observe(fader);
-      });
-
-      // Menggunakan fungsi fetch untuk panggil file footer.html
-      fetch("footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-        });
-
-      // Fungsi untuk muncul gambar 3 Ways secara fade-in
-      const images = document.querySelectorAll(".scroll-image");
-
-      images.forEach((image, index) => {
-        appearOnScroll.observe(image);
-      });
-    </script>
+    <script src="../js/home-script.js"></script>
+    <script src="../js/theme-toggle.js"></script>
   </body>
 </html>

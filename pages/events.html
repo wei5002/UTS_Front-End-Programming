@@ -8,9 +8,9 @@
   </head>
   <body>
     <nav id="navbar">
-      <a href="index.html" id="logo"
-        ><img src="../assets/images/logo.png" alt="FitSteps Logo"
-      /></a>
+      <a href="index.html" id="logo">
+        <img src="../assets/images/logo.png" alt="FitSteps Logo" />
+      </a>
       <div class="navbar-biasa">
         <a href="index.html">Home</a>
         <a href="#">Tips & Workout</a>
@@ -18,10 +18,12 @@
         <a href="#">Health Benefits</a>
         <a href="#">Contact Us</a>
         <a href="events.html">Upcoming Events</a>
+        <!-- Tombol Mode Terang/Gelap -->
+        <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
       </div>
-      <a href="index.html" id="moto"
-        ><img src="../assets/images/moto.png" alt="FitSteps Moto"
-      /></a>
+      <a href="index.html" id="moto">
+        <img src="../assets/images/moto.png" alt="FitSteps Moto" />
+      </a>
     </nav>
 
     <div class="video-container">
@@ -32,7 +34,7 @@
     </div>
 
     <div class="content">
-      <h1>Welcome to FitSteps: Upcoming Events !</h1>
+      <h1>Welcome to FitSteps: Upcoming Events!</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, nam
         facere. In, animi maxime voluptate dicta, nam perferendis repudiandae
@@ -43,36 +45,8 @@
 
     <!-- Load footer from external file -->
     <div id="footer-placeholder"></div>
+
+    <script src="../js/events-script.js"></script>
+    <script src="../js/theme-toggle.js"></script>
   </body>
-
-  <!-- 
-Berikut tiga tahap motivasi untuk memulai olahraga:
-
-Tentukan Tujuan yang Jelas: Menetapkan tujuan spesifik, seperti menurunkan berat badan, meningkatkan stamina, atau membangun otot, dapat memberikan arah yang jelas. Tuliskan tujuan ini dan jadikan sebagai pengingat mengapa kamu ingin berolahraga.
-
-Mulai dengan Langkah Kecil: Tidak perlu langsung memaksakan diri. Mulailah dengan latihan yang ringan dan singkat, seperti berjalan kaki 15 menit setiap hari. Dengan memulai dari yang kecil, tubuh dan pikiran akan lebih mudah beradaptasi, sehingga rutinitas olahraga bisa terasa lebih ringan dan menyenangkan.
-
-Rayakan Kemajuan Kecil: Hargai setiap pencapaian, sekecil apapun itu. Apakah itu berhasil berolahraga 3 hari berturut-turut atau berhasil menambah durasi latihan, merayakan kemajuan akan menambah rasa percaya diri dan semangat untuk terus berolahraga. -->
-
-  <script>
-    const video = document.getElementById("background-video");
-    const volumeBtn = document.getElementById("volume-btn");
-
-    function toggleVolume() {
-      if (video.muted) {
-        video.muted = false;
-        volumeBtn.textContent = "🔊";
-      } else {
-        video.muted = true;
-        volumeBtn.textContent = "🔈";
-      }
-    }
-
-    // Menggunakan fetch untuk memuat file footer.html
-    fetch("footer.html")
-      .then((response) => response.text())
-      .then((data) => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
 </html>
