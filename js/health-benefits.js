@@ -16,3 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+<<<<<<< HEAD
+=======
+  
+>>>>>>> cb0a964e2ac6523a1ab318e3e93ac125d5930cec
