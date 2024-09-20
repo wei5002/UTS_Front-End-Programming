@@ -22,7 +22,7 @@ footer {
   
   .footer-links h4,
   .company-info h4,
-  .call-us h4 {
+  .Call-Us h4 {
     font-size: 1.2em;
     margin-bottom: 20px;
     color: #ffffff;
@@ -67,49 +67,27 @@ footer {
     text-decoration: none;
   }
   
-  .call-icons {
+  .Call-icons {
     display: flex;
-    gap: 10px;
-    
+    flex-direction: column;
+    /* gap: 0px;  */
   }
   
-  .call-icons a{
-    color: white  ;
+  .Call-icons a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
   }
 
-  .call-icons img {
-    width: 30px;
+  .Call-icons i{
+    margin-right: 8px;
   }
+
   
-  .call-us h4 {
+  .Call-Us h4 {
     font-size: 1.2em;
     color: #fff;
     margin-bottom: 20px;
   }
   
-  .call-us img {
-    width: 30px;
-  }
-  
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-  }
-  
-  .appear {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .banner {
-    margin-top: 60px;
-    text-align: center;
-  }
-  
-  .banner img {
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-  }
