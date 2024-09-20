@@ -81,6 +81,8 @@ body {
   opacity: 1;
 }
 
+/* ===========BATAS=========== */
+
 /* Content styling */
 .content {
   margin-top: 40px;
@@ -140,6 +142,8 @@ body {
   background: rgba(255, 255, 255, 1);
 }
 
+/* ===========BATAS=========== */
+
 /* Fungsi Responsive Navbar */
 /* ketika web dibuka di layar kecil, logo, navbar, video akan menyesuaikan */
 @media (max-width: 768px) {
@@ -162,6 +166,8 @@ body {
     width: 100%;
   }
 }
+
+/* ===========BATAS=========== */
 
 /* Footer */
 footer {
@@ -273,6 +279,8 @@ footer {
   display: block;
 }
 
+/* ===========BATAS=========== */
+
 /* POP UP BROSUR */
 .popup-background {
   position: fixed;
@@ -344,6 +352,8 @@ footer {
   }
 }
 
+/* ===========BATAS=========== */
+
 /* Style untuk muncul 3 Ways */
 .images-container {
   display: flex;
@@ -377,6 +387,8 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ===========BATAS=========== */
 
 /* Style untuk HEALTH BENEFITS HOME */
 .cta-section {
@@ -419,6 +431,8 @@ footer {
   background-color: #4bde38;
 }
 
+/* ===========BATAS=========== */
+
 /* agar semua elemen scroll menjadi lebih smooth */
 html {
   scroll-behavior: smooth;
@@ -459,6 +473,8 @@ html {
   transform: scale(1.4);
   transition: transform 0.2s ease-in;
 }
+
+/* ===========BATAS=========== */
 
 /* BAGIAN NEWSLETTER */
 .newsletter-section {
@@ -527,6 +543,8 @@ html {
   font-size: 0.9rem;
   color: #777777;
 }
+
+/* ===========BATAS=========== */
 
 /* GAYA Light Mode */
 body {
