@@ -1,3 +1,33 @@
+@font-face {
+  font-family: 'AmericanCaptain';
+  src: url('../assets/fonts/American Captain.ttf') format(truetype);
+}
+
+@font-face {
+  font-family: 'StanfordBreath';
+  src: url('../assets/fonts/Stanford_Breath.ttf') format(truetype);
+}
+
+@font-face {
+  font-family: 'Romantic';
+  src: url('../assets/fonts/ROMANTIC.TTF') format(truetype);
+}
+
+@font-face {
+  font-family: 'VintageKing';
+  src: url('../assets/fonts/VintageKing.ttf') format(truetype);
+}
+
+@font-face {
+  font-family: 'Milky';
+  src: url('../assets/fonts/MilkyVintage.ttf') format(truetype);
+}
+
+@font-face {
+  font-family: 'BrightDEMO';
+  src: url('../assets/fonts/Bright DEMO.otf') format(truetype);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -107,15 +137,20 @@
 
   #hero h1 , h2{
     text-align: left;
-    font-weight: bold;
     font-size: 2em;
   }
 
   #hero h1{
+    font-family: 'Romantic', sans-serif;
     color: #fff;
+    font-size: 4em;
+    letter-spacing: 10px;
   }
 
   #hero h2 {
+    font-family: 'BrightDEMO', sans-serif;
+    font-size: 3em;
+    letter-spacing: 4px;
     color: #339926;
   }
 
