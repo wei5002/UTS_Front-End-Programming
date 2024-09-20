@@ -5,37 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitSteps</title>
     <link rel="stylesheet" href="../css/style-workout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/backToTopButton.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        document.querySelectorAll('.left-navbar a').forEach(anchor => {
-          anchor.addEventListener('click', function(e) {
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".left-navbar a").forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
             e.preventDefault();
 
-            const targetId = this.getAttribute('onclick').match(/'([^']+)'/)[1];
+            const targetId = this.getAttribute("onclick").match(/'([^']+)'/)[1];
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
-              targetElement.scrollIntoView({ behavior: 'smooth', block: 'center'});
+              targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              });
             }
           });
         });
       });
     </script>
-
   </head>
   <body>
+    <!-- TOMBOL Back to Top -->
+    <button id="backToTopBtn" class="back-to-top">
+      <img
+        src="../assets/images/green-up.png"
+        alt="Back to Top"
+        id="backToTopImg"
+      />
+    </button>
+
     <nav id="navbar">
-      <a href="#" id="logo"><img src="../assets/images/logo.png" alt="FitSteps Logo"></a>
+      <a href="index.html" id="logo"
+        ><img src="../assets/images/logo.png" alt="FitSteps Logo"
+      /></a>
       <div class="navbar-biasa">
         <a href="index.html">Home</a>
         <a href="nav-tips-workout.html">Tips & Workout</a>
-        <a href="nav-trendy-shoes.html">Trendy Sneakers</a>
+        <a href="nav-trendy-shoes.html">Trendy Shoes</a>
         <a href="Health Benefits.html">Health Benefits</a>
         <a href="Contact Us.html">Contact Us</a>
         <a href="events.html">Upcoming Events</a>
+
+        <!-- Tombol Mode Terang/Gelap -->
+        <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
       </div>
-      <a href="#" id="moto"><img src="../assets/images/moto.png" alt="FitSteps Moto"></a>
+      <a href="index.html" id="moto"
+        ><img src="../assets/images/moto.png" alt="FitSteps Moto"
+      /></a>
     </nav>
 
     <div class="left-navbar">
@@ -53,13 +75,17 @@
         <h2>Warming Up</h2>
         <div class="grids">
           <div class="image">
-            <img src="../assets/images/workout/jogging.jpg" alt="Jogging">
+            <img src="../assets/images/workout/jogging.jpg" alt="Jogging" />
           </div>
           <div class="desc">
-            <h5>Why we need to warming up before exercise? </h5>
+            <h5>Why we need to warming up before exercise?</h5>
             <p>
-              Warming up before exercise is a crucial step that many overlook, but it plays significant role in preparing the body for more intense physical activity.
-              Warming up can reduce the risk of injuries such as muscle cramps, strains, or sprains. When you exercise without warming-up, your muscles are "cold" and stiff, making them more susceptible to injury.
+              Warming up before exercise is a crucial step that many overlook,
+              but it plays significant role in preparing the body for more
+              intense physical activity. Warming up can reduce the risk of
+              injuries such as muscle cramps, strains, or sprains. When you
+              exercise without warming-up, your muscles are "cold" and stiff,
+              making them more susceptible to injury.
             </p>
             <h5>Steps:</h5>
             <ul>
@@ -76,40 +102,71 @@
         <h2>Arm Exercise</h2>
         <div class="grids">
           <div class="image">
-            <img src="../assets/images/workout/push-up.jpg">
+            <img src="../assets/images/workout/push-up.jpg" />
           </div>
           <div class="desc">
             <p>
-              Strengthening your arms is not only for enhancing muscle definition but also for improving overall upper body strength. Regular arm workouts can help you carry out daily activities with ease, boost your endurance, and promote better posture.
-              Push-ups are one of the most effective and accessible for strengthening the arms and upper body.
+              Strengthening your arms is not only for enhancing muscle
+              definition but also for improving overall upper body strength.
+              Regular arm workouts can help you carry out daily activities with
+              ease, boost your endurance, and promote better posture. Push-ups
+              are one of the most effective and accessible for strengthening the
+              arms and upper body.
             </p>
             <h5>Steps:</h5>
             <ul>
-              <li>Start in a plank position with your hands placed slightly wider than shoulder-width apart.</li>
-              <li>Lower your body towards the ground while keeping your elbows close to your body.</li>
-              <li>Push through your palms to raise your body back to the starting position. (10-15 repetition)</li>
+              <li>
+                Start in a plank position with your hands placed slightly wider
+                than shoulder-width apart.
+              </li>
+              <li>
+                Lower your body towards the ground while keeping your elbows
+                close to your body.
+              </li>
+              <li>
+                Push through your palms to raise your body back to the starting
+                position. (10-15 repetition)
+              </li>
             </ul>
           </div>
         </div>
       </section>
-    
+
       <section id="leg" class="workout-section">
         <h2>Leg Exercise</h2>
         <div class="grids">
           <div class="image">
-            <img src="../assets/images/workout/squats.png" alt="squats">
-         </div>
+            <img src="../assets/images/workout/squats.png" alt="squats" />
+          </div>
           <div class="desc">
             <p>
-              Strong legs are fundamental for overall physical fitness and endurance. Regular leg exercise hemp improver balance, stability, and power, which are essential for many daily activities and athletic movements.
-              One of the most effective exercise for strengthening the legs is the squat. Squats not only target the major muscle group is the lower body, including quadriceps, hamstring, glutes, but they also engage the core and promote functional strength.
+              Strong legs are fundamental for overall physical fitness and
+              endurance. Regular leg exercise hemp improver balance, stability,
+              and power, which are essential for many daily activities and
+              athletic movements. One of the most effective exercise for
+              strengthening the legs is the squat. Squats not only target the
+              major muscle group is the lower body, including quadriceps,
+              hamstring, glutes, but they also engage the core and promote
+              functional strength.
             </p>
             <h5>Steps:</h5>
             <ul>
-              <li>Stand with your feet shoulder-width apart, with your toe spointing slightly outward.</li>
-              <li>Keep your arms at your sides or ectend them straight in front of you for balance.</li>
-              <li>Begin lowering your body by bending at the hips and knees as if you sitting back into a chair.</li>
-              <li>As you squat, make sure the weight is on you rheels and not your toes (10-15 repetition).</li>
+              <li>
+                Stand with your feet shoulder-width apart, with your toe
+                spointing slightly outward.
+              </li>
+              <li>
+                Keep your arms at your sides or ectend them straight in front of
+                you for balance.
+              </li>
+              <li>
+                Begin lowering your body by bending at the hips and knees as if
+                you sitting back into a chair.
+              </li>
+              <li>
+                As you squat, make sure the weight is on you rheels and not your
+                toes (10-15 repetition).
+              </li>
             </ul>
           </div>
         </div>
@@ -119,20 +176,38 @@
         <h2>Back Exercise</h2>
         <div class="grids">
           <div class="image">
-            <img src="../assets/images/workout/bent-over-row.jpg" alt="bent over row">
-         </div>
+            <img
+              src="../assets/images/workout/bent-over-row.jpg"
+              alt="bent over row"
+            />
+          </div>
           <div class="desc">
             <p>
-              A strong back is essential for maintaining good posture, balance, and overall strength.
-              Incorporating back exercises into your routine not only helps prevent injuries but also supports a wide range of daily movements, from lifting to carrying.
-              Strengthening your back muscles improves your endurance and stability, which is key for long-term fitness.
+              A strong back is essential for maintaining good posture, balance,
+              and overall strength. Incorporating back exercises into your
+              routine not only helps prevent injuries but also supports a wide
+              range of daily movements, from lifting to carrying. Strengthening
+              your back muscles improves your endurance and stability, which is
+              key for long-term fitness.
             </p>
             <h5>Steps:</h5>
             <ul>
-              <li>Grab a weight and stand with feet hip-width apart, knees slightly bent.</li>
-              <li>Hinge at the hips, keeping your back straigth and let the weights hang down.</li>
-              <li>Pull the weight toward your ribs, keeping elbows close to your body.</li>
-              <li>Lower slowly back to the starting position, controlling the movement (8-12 repetition).</li>
+              <li>
+                Grab a weight and stand with feet hip-width apart, knees
+                slightly bent.
+              </li>
+              <li>
+                Hinge at the hips, keeping your back straigth and let the
+                weights hang down.
+              </li>
+              <li>
+                Pull the weight toward your ribs, keeping elbows close to your
+                body.
+              </li>
+              <li>
+                Lower slowly back to the starting position, controlling the
+                movement (8-12 repetition).
+              </li>
             </ul>
           </div>
         </div>
@@ -142,20 +217,40 @@
         <h2>Chest Exercise</h2>
         <div class="grids">
           <div class="image">
-            <img src="../assets/images/workout/bench-press.jpg" alt="bench press">
-         </div>
+            <img
+              src="../assets/images/workout/bench-press.jpg"
+              alt="bench press"
+            />
+          </div>
           <div class="desc">
             <p>
-              Building a strong chest not only enhances upper body strengthbut also improves your overall physical appearance and athletic performance.
-              Chest exercises target the pectoral muscles, which are responsible for pushing and lifting movements.
-              Bench press is one of the most effective exercise for building strength and muscle. Whether you're using a barbell or dubbells, the bench press helps to develop upper body power and improve overall chest definition.
+              Building a strong chest not only enhances upper body strengthbut
+              also improves your overall physical appearance and athletic
+              performance. Chest exercises target the pectoral muscles, which
+              are responsible for pushing and lifting movements. Bench press is
+              one of the most effective exercise for building strength and
+              muscle. Whether you're using a barbell or dubbells, the bench
+              press helps to develop upper body power and improve overall chest
+              definition.
             </p>
             <h5>Steps:</h5>
             <ul>
-              <li>Lie flat on a bench with your feet firmly on the ground. Grip the bar slightly wider than shoulder-width apart.</li>
-              <li>Unrack the bar and slowly lower it towards you chest, keeping your elbows at 45 degrees angle.</li>
-              <li>Push the bar back up to the starting position by extending your arms fully without locking your elbows.</li>
-              <li>Continue the motion, focusing on control and maintaining proper form (8-12 repetition)</li>
+              <li>
+                Lie flat on a bench with your feet firmly on the ground. Grip
+                the bar slightly wider than shoulder-width apart.
+              </li>
+              <li>
+                Unrack the bar and slowly lower it towards you chest, keeping
+                your elbows at 45 degrees angle.
+              </li>
+              <li>
+                Push the bar back up to the starting position by extending your
+                arms fully without locking your elbows.
+              </li>
+              <li>
+                Continue the motion, focusing on control and maintaining proper
+                form (8-12 repetition)
+              </li>
             </ul>
           </div>
         </div>
@@ -165,20 +260,36 @@
         <h2>Abs Exercise</h2>
         <div class="grids">
           <div class="image">
-            <img src="../assets/images/workout/plank.jpg" alt="plank">
-         </div>
+            <img src="../assets/images/workout/plank.jpg" alt="plank" />
+          </div>
           <div class="desc">
             <p>
-              A strong core is essential for maintaining balance, stability, and overall strength.
-              Abs exercises not only help sculpt your midsection but also support your posture and reduce the risk of injury during other workouts.
-              One of the effective ways to strengthen tour core is through the plank exercise. The plank not only targets the abdominal muscles but also engages the shoulders, back, and glutes.
+              A strong core is essential for maintaining balance, stability, and
+              overall strength. Abs exercises not only help sculpt your
+              midsection but also support your posture and reduce the risk of
+              injury during other workouts. One of the effective ways to
+              strengthen tour core is through the plank exercise. The plank not
+              only targets the abdominal muscles but also engages the shoulders,
+              back, and glutes.
             </p>
             <h5>Steps:</h5>
             <ul>
-              <li>Begin by getting into a push-up position with your forearms on the floor and elbows directly beneath your shoulders.</li>
-              <li>Keep your body in a straight line from head to heels, avoiding any sagging or arching in your back.</li>
-              <li>Tighten your abdominal muscles and hold this positioning, keeping your gaze downward.</li>
-              <li>Maintain the plank for 20-30 seconds, gradually increasing the time as you build strength. (3 sets of 20-30 seconds)</li>
+              <li>
+                Begin by getting into a push-up position with your forearms on
+                the floor and elbows directly beneath your shoulders.
+              </li>
+              <li>
+                Keep your body in a straight line from head to heels, avoiding
+                any sagging or arching in your back.
+              </li>
+              <li>
+                Tighten your abdominal muscles and hold this positioning,
+                keeping your gaze downward.
+              </li>
+              <li>
+                Maintain the plank for 20-30 seconds, gradually increasing the
+                time as you build strength. (3 sets of 20-30 seconds)
+              </li>
             </ul>
           </div>
         </div>
@@ -188,14 +299,20 @@
         <h2>Cooling Down</h2>
         <div class="grids">
           <div class="image">
-            <img src="../assets/images/workout/deep-breathing.jpg" alt="Deep Breathing">
-         </div>
+            <img
+              src="../assets/images/workout/deep-breathing.jpg"
+              alt="Deep Breathing"
+            />
+          </div>
           <div class="desc">
             <h5>Why do we need to cooling down?</h5>
             <p>
-              Cooling down after exercise is an essential practice that many people tend to overlook.
-              It serves several important purposes for the body, helping it transition from an elevated state of exertion back to a resting state.
-              Cooling down can aid in preventing muscle stiffness and soreness, reduce the heart rate gradually, and promote relaxation.
+              Cooling down after exercise is an essential practice that many
+              people tend to overlook. It serves several important purposes for
+              the body, helping it transition from an elevated state of exertion
+              back to a resting state. Cooling down can aid in preventing muscle
+              stiffness and soreness, reduce the heart rate gradually, and
+              promote relaxation.
             </p>
             <h5>Steps:</h5>
             <ul>
@@ -207,5 +324,11 @@
         </div>
       </section>
     </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/theme-toggle.js"></script>
+    <script src="../js/backToTopButton.js"></script>
+    <script src="../js/footer.js"></script>
   </body>
 </html>
