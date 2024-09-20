@@ -10,6 +10,8 @@ body {
   color: #000000;
   font-size: 16px;
   line-height: 1.6;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 #navbar-main {
@@ -28,11 +30,12 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
 }
 
 #navbar-main #logo img {
-  height: 100px;
+  height: 92px;
   width: auto;
   margin-right: 30px;
   display: block;
@@ -84,122 +87,68 @@ body {
   opacity: 1;
 }
 
-#navbar-data {
-background: #f3eeee;
-box-shadow: 0px 3px 100px rgba(0, 0, 0, 0.1);
-position: fixed;
-top: 60px;
-left: 0;
-width: 180px;
-height: 100%;
-padding-top: 8px;
-overflow-y: auto;
-}
-
-#navbar-data ul{
-  list-style: none;
-  padding: 0;
-}
-
-#navbar-data ul li{
-  margin: 10px 0; 
-}
-
-#navbar-data ul li a{
-  display: block;
-  padding: 10px 20px;
-  color: #000;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-}
-
-#navbar-data ul li a:hover{
-  background-color: #4BDE38;
-  color: #fff;
-}
-
-#kesehatan{
+/* NAVBAR HEALTH BENEFITS */
+.navbar-data{
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #fff;
+  border-right: 1px solid #ddd; 
+  padding-top: 20px;
   display: flex;
-  align-items: center;
-  justify-items: center;
-  flex-direction: column;
-  padding-top: 100px;
-  min-height: 100vh;
+  flex-direction: column; 
 }
 
-#kesehatan h2{
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 40px;
-}
-
-.kotak{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.data{
-  display: flex;
-  align-items: flex-start;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.navbar-data a{
   padding: 15px;
-  transition: transform 0.3s;
-  width: 100%;
-  max-width: 1000px;
-  margin: 20 auto;
-  /* margin-bottom: 5px; */
+  text-decoration: none;
+  font-size: 16;
+  margin: 1px 0px;
+  color: black;
+  transition: background-color 0.3s, color 0.3s ;
 }
 
-.data:hover{
-  transform: scale(1.02);
+.navbar-data a:hover{
+  background-color: #4BDE38;
+  color: #ffffff;
 }
 
-.teks{
-  flex: 1;
+.posisi{
   display: flex;
-  flex-direction: column;
-  font-size: 14px;
-
+  flex-direction: row;
 }
 
-.no-img{
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.no-img li{
-  color: #5f5d5d;
-  margin-left: 20px;
-  font-size: 14px;
-  text-align: justify;
-}
-
-.data img{
-  width: 400px;
+.image img{
   height: 300px;
-  margin-right: 20px;
-  border-radius: 10px;
+  width: 400px;
+  /* margin-left: 200px; */
   /* object-fit: cover; */
+  margin-right: 25px;
+  border-radius: 10px;
 }
 
-.data h3{
-  font-size: 16px;
+.isi{
+  margin-top: 100px;
+  margin-left: 250px;
+  padding: 20px;
 }
 
-.no-img h4{
-  font-size: 30px;
-}
-
-.no-img p{
-  font-size: 15px;
-}
-
-.data p{
-  color: #5f5d5d;
-  max-width: 9000px;
+.data-ada-img,
+.data-no-img{
+  padding: 20px;
+  margin-bottom: 40px;
+  border: 1px solid #ddd;
+  border-radius: 10px;background-color: #fff;
   text-align: justify;
+}
+
+p, h3,
+ul li {
+  color: #626962;
+}
+
+.data-no-img ul li{
+  margin: 0 15px;
 }

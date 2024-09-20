@@ -29,6 +29,10 @@ footer {
     color: #ffffff;
   }
 
+  .company-info p{
+    color: white;
+  }
+
   .company-info h5 {
     font-size: 1.5em;
     margin-bottom: 20px;
@@ -54,13 +58,14 @@ footer {
   
   .footer-bottom {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
     color: #fff;
   }
   
   .footer-bottom p {
-    margin: 5px 0;
+    margin: 3px 0;
     font-size: 0.9em;
+    color: white;
   }
   
   .footer-bottom a {
