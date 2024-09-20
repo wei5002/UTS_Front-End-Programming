@@ -11,12 +11,6 @@ function toggleVolume() {
   }
 }
 
-// Menggunakan fetch untuk memuat file footer.html
-fetch("footer.html")
-  .then((response) => response.text())
-  .then((data) => {
-    document.getElementById("footer-placeholder").innerHTML = data;
-  });
 
 // Menjalankan kode saat halaman dimuat
 document.addEventListener("DOMContentLoaded", () => {

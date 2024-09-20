@@ -52,12 +52,6 @@ faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
 
-// Menggunakan fungsi fetch untuk panggil file footer.html
-fetch("footer.html")
-  .then((response) => response.text())
-  .then((data) => {
-    document.getElementById("footer-placeholder").innerHTML = data;
-  });
 
 // Fungsi untuk muncul gambar 3 Ways secara fade-in
 const images = document.querySelectorAll(".scroll-image");
