@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitSteps: Small Steps Big Changes</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- TOMBOL Back to Top -->
+    <button id="backToTopBtn" class="back-to-top">
+      <img
+        src="../assets/images/green-up.png"
+        alt="Back to Top"
+        id="backToTopImg"
+      />
+    </button>
+
+    <nav id="navbar">
+      <a href="index.html" id="logo"
+        ><img src="../assets/images/logo.png" alt="FitSteps Logo"
+      /></a>
+      <div class="navbar-biasa">
+        <a href="index.html">Home</a>
+        <a href="#">Tips & Workout</a>
+        <a href="#">Trendy Shoes</a>
+        <a href="#">Health Benefits</a>
+        <a href="#">Contact Us</a>
+        <a href="/pages/events.html">Upcoming Events</a>
+
+        <!-- Tombol Mode Terang/Gelap -->
+        <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
+      </div>
+      <a href="index.html" id="moto"
+        ><img src="../assets/images/moto.png" alt="FitSteps Moto"
+      /></a>
+    </nav>
+
+    <div class="popup-background hidden" id="popup">
+      <div class="popup-content">
+        <img
+          src="../assets/images/brosur.png"
+          alt="Brosur"
+          class="popup-image"
+        />
+        <button class="close-btn" id="closeBtn">Close</button>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <video id="background-video" autoplay muted loop>
+        <source src="../assets/videos/video-opening.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <button id="volume-btn" onclick="toggleVolume()">🔈</button>
+    </div>
+
+    <div class="content fade-in">
+      <h1>Welcome to FitSteps!</h1>
+      <p>
+        FitSteps lebih dari sekadar platform kebugaran—ini adalah pintu menuju
+        gaya hidup sehat dan aktif! Ayo, temukan tips, latihan, sepatu tren, dan
+        banyak lagi yang dirancang khusus untuk membantu Anda mengambil langkah
+        kecil menuju perubahan besar!
+      </p>
+      <p>
+        Ingin menemukan latihan terbaik, memahami manfaat kesehatan, atau
+        mengikuti tren gaya hidup olahraga terkini?
+      </p>
+      <br />
+      <h4>FitSteps punya semuanya untuk Anda!</h4>
+    </div>
+
+    <div class="images-container fade-in">
+      <img
+        src="../assets/images/3Ways/1.png"
+        alt="Image 1"
+        class="scroll-image image1"
+      />
+      <img
+        src="../assets/images/3Ways/2.png"
+        alt="Image 2"
+        class="scroll-image image2"
+      />
+      <img
+        src="../assets/images/3Ways/3.png"
+        alt="Image 3"
+        class="scroll-image image3"
+      />
+    </div>
+
+    <div class="cta-section fade-in">
+      <h2>MULAI BERAKTIVITAS</h2>
+      <p>
+        Cari tahu apa saja manfaat berolahraga sekarang, mulai gaya hidup
+        sehatmu hari ini juga!
+      </p>
+      <a href="#" class="cta-button">HEALTH BENEFITS</a>
+    </div>
+
+    <div class="banner fade-in">
+      <img src="../assets/images/banner.png" alt="FitSteps Banner" />
+    </div>
+
+    <div id="newsletter-placeholder" class="fade-in"></div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/home-script.js"></script>
+    <script src="../js/theme-toggle.js"></script>
+  </body>
+</html>
