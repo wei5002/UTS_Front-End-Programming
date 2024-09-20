@@ -52,34 +52,11 @@ faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
 
-// Menggunakan fungsi fetch untuk panggil file footer.html
-fetch("footer.html")
-  .then((response) => response.text())
-  .then((data) => {
-    document.getElementById("footer-placeholder").innerHTML = data;
-  });
-
 // Fungsi untuk muncul gambar 3 Ways secara fade-in
 const images = document.querySelectorAll(".scroll-image");
 
 images.forEach((image, index) => {
   appearOnScroll.observe(image);
-});
-
-// TOMBOL BACK TO TOP
-let backToTopBtn = document.getElementById("backToTopBtn");
-function showBackToTopBtn() {
-  backToTopBtn.style.display = "block"; // mengatur properti display menjadi block.
-  backToTopBtn.style.bottom = "20px"; // tombol di posisi 20px dari bagian bawah halaman.
-}
-showBackToTopBtn();
-
-// KETIKA USER KLIK TOMBOL BACK-TO-TOP MAKA AKAN SMOOTH NAIKNYA
-backToTopBtn.addEventListener("click", function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
 });
 
 // ALERT KETIKA USER SUBMIT FORM
@@ -92,5 +69,3 @@ fetch("newsletter-form.html")
   .then((data) => {
     document.getElementById("newsletter-placeholder").innerHTML = data;
   });
-
-
