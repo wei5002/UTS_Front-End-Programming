@@ -18,7 +18,7 @@ body {
 
 .left-navbar {
   position: fixed;
-  top: 60px;
+  top: 100px;
   left: 0;
   width: 200px;
   height: 100%;
@@ -57,7 +57,7 @@ body {
 }
 
 .content-container {
-  margin-top: 100px;
+  margin-top: 40px;
   margin-left: 220px;
   padding: 20px;
 }
