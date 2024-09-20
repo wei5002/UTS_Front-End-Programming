@@ -92,7 +92,7 @@
 
 
   #hero{
-    background-image: url("images/trendy/hero.jpg");
+    background-image: url("../assets/images/trendy/hero.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
