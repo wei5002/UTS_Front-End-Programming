@@ -1,15 +1,15 @@
 
 /* Footer */
 footer {
-    background-color: #7a9be2;
+    background-color: #3db72d;
     color: #fff;
-    padding: 40px 0;
+    padding: 20px 0;
     margin-top: 100px;
   }
   
   .footer-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     max-width: 1200px;
@@ -24,10 +24,11 @@ footer {
   .company-info h4,
   .Call-Us h4 {
     font-size: 1.2em;
+    margin-top: 25px;
     margin-bottom: 20px;
     color: #ffffff;
   }
-  
+
   .company-info h5 {
     font-size: 1.5em;
     margin-bottom: 20px;
