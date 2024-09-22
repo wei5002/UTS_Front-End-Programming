@@ -1,31 +1,16 @@
 @font-face {
-  font-family: 'AmericanCaptain';
-  src: url('../assets/fonts/American Captain.ttf') format(truetype);
-}
-
-@font-face {
-  font-family: 'StanfordBreath';
-  src: url('../assets/fonts/Stanford_Breath.ttf') format(truetype);
-}
-
-@font-face {
-  font-family: 'Romantic';
-  src: url('../assets/fonts/ROMANTIC.TTF') format(truetype);
-}
-
-@font-face {
-  font-family: 'VintageKing';
-  src: url('../assets/fonts/VintageKing.ttf') format(truetype);
-}
-
-@font-face {
-  font-family: 'Milky';
-  src: url('../assets/fonts/MilkyVintage.ttf') format(truetype);
-}
-
-@font-face {
   font-family: 'BrightDEMO';
   src: url('../assets/fonts/Bright DEMO.otf') format(truetype);
+}
+
+@font-face {
+  font-family: 'Rafgins';
+  src: url('../assets/fonts/Rafgins-Regular.ttf') format(truetype);
+}
+
+@font-face {
+  font-family: 'Cafe';
+  src: url('../assets/fonts/Louis George Cafe.ttf') format(truetype);
 }
 
 * {
@@ -60,45 +45,32 @@ body {
   padding: 50px;
 }
 
-#hero h1,
-h2 {
+#hero h1,h2 {
   text-align: left;
-  font-weight: bold;
   font-size: 2em;
+  margin-bottom: 0px;
+  line-height: 1.0;
 }
 
-<<<<<<< HEAD
-  #hero h1 , h2{
-    text-align: left;
-    font-size: 2em;
-  }
-
-  #hero h1{
-    font-family: 'Romantic', sans-serif;
-    color: #fff;
-    font-size: 4em;
-    letter-spacing: 10px;
-  }
-
-  #hero h2 {
-    font-family: 'BrightDEMO', sans-serif;
-    font-size: 3em;
-    letter-spacing: 4px;
-    color: #339926;
-  }
-=======
 #hero h1 {
   color: #fff;
+  font-family: 'Rafgins', sans-serif;
+  font-size: 5em;
+  letter-spacing: 4px;
 }
 
 #hero h2 {
   color: #339926;
+  font-family: 'BrightDEMO', sans-serif;
+  font-size: 3.3em;
+  letter-spacing: 2px;
 }
 
 #hero p {
   color: #000;
+  font-family: 'Cafe', sans-serif;
+  font-size: 18px;
 }
->>>>>>> abf3a73294cc4a1b01bdce5e742fbf02f250449e
 
 .shoe-list {
   display: flex;
@@ -148,6 +120,7 @@ h2 {
   flex-wrap: wrap;
   width: 100%;
   max-width: 900px;
+  font-family: 'Cafe', sans-serif;
 }
 
 .rating {

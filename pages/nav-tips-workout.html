@@ -16,7 +16,7 @@
           anchor.addEventListener("click", function (e) {
             e.preventDefault();
 
-            const targetId = this.getAttribute("onclick").match(/'([^']+)'/)[1];
+            const targetId = this.getAttribute("href").substring(1);
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
@@ -61,24 +61,36 @@
     </nav>
 
     <div class="left-navbar">
-      <a href="#" onclick="scrollToSection('warm-up')">Warming-Up</a>
-      <a href="#" onclick="scrollToSection('arm')">Arm Exercise</a>
-      <a href="#" onclick="scrollToSection('leg')">Leg Exercise</a>
-      <a href="#" onclick="scrollToSection('back')">Back Exercise</a>
-      <a href="#" onclick="scrollToSection('chest')">Chest Exercise</a>
-      <a href="#" onclick="scrollToSection('abs')">ABS Exercise</a>
-      <a href="#" onclick="scrollToSection('cool-down')">Cooling-Down</a>
+      <a href="#warm-up">Warming-Up</a>
+      <a href="#arm">Arm Exercise</a>
+      <a href="#leg">Leg Exercise</a>
+      <a href="#back">Back Exercise</a>
+      <a href="#chest">Chest Exercise</a>
+      <a href="#abs">ABS Exercise</a>
+      <a href="#cool-down">Cooling-Down</a>
     </div>
 
     <div class="content-container">
+
       <section id="warm-up" class="workout-section">
         <h2>Warming Up</h2>
         <div class="grids">
-          <div class="image">
-            <img src="../assets/images/workout/jogging.jpg" alt="Jogging" />
+          <div class="flip-container">
+            <div class="flip-card">
+              <div class="front-card">
+                <div class="image">
+                  <img src="../assets/images/workout/jogging.jpg" alt="Jogging" />
+                </div>
+              </div>
+              <div class="back-card">
+                <div class="image-back">
+                  <img src="../assets/images/workout/warming-up.gif" alt="warming-up-gif">
+                </div>
+              </div>
+            </div>
           </div>
           <div class="desc">
-            <h5>Why we need to warming up before exercise?</h5>
+            <h5>Why do we need to warming up before exercise?</h5>
             <p>
               Warming up before exercise is a crucial step that many overlook,
               but it plays significant role in preparing the body for more
@@ -92,18 +104,30 @@
               <li>Light Jogging (3-5 minutes)</li>
               <li>Arm Circles (3-5 minutes)</li>
               <li>High Knees (2-3 minutes)</li>
-              <li>Squats (10-15 repetition)</li>
             </ul>
           </div>
         </div>
       </section>
 
+
       <section id="arm" class="workout-section">
         <h2>Arm Exercise</h2>
         <div class="grids">
-          <div class="image">
-            <img src="../assets/images/workout/push-up.jpg" />
+          <div class="flip-container">
+            <div class="flip-card">
+              <div class="front-card">
+                <div class="image">
+                  <img src="../assets/images/workout/push-up.jpg" alt="push-up"/>
+                </div>
+              </div>
+              <div class="back-card">
+                <div class="image-back">
+                  <img src="../assets/images/workout/push-up.gif" alt="push-up-gif">
+                </div>
+              </div>
+            </div>
           </div>
+          
           <div class="desc">
             <p>
               Strengthening your arms is not only for enhancing muscle
@@ -132,12 +156,25 @@
         </div>
       </section>
 
+
       <section id="leg" class="workout-section">
         <h2>Leg Exercise</h2>
         <div class="grids">
-          <div class="image">
-            <img src="../assets/images/workout/squats.png" alt="squats" />
+          <div class="flip-container">
+            <div class="flip-card">
+              <div class="front-card">
+                <div class="image">
+                  <img src="../assets/images/workout/squats.png" alt="squats" />
+                </div>
+              </div>
+              <div class="back-card">
+                <div class="image-back">
+                  <img src="../assets/images/workout/squats.gif" alt="squats-gif">
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="desc">
             <p>
               Strong legs are fundamental for overall physical fitness and
@@ -170,17 +207,27 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section>      
+
 
       <section id="back" class="workout-section">
         <h2>Back Exercise</h2>
         <div class="grids">
-          <div class="image">
-            <img
-              src="../assets/images/workout/bent-over-row.jpg"
-              alt="bent over row"
-            />
+          <div class="flip-container">
+            <div class="flip-card">
+              <div class="front-card">
+                <div class="image">
+                  <img src="../assets/images/workout/bent-over-row.jpg" alt="bent over row"/>
+                </div>
+              </div>
+              <div class="back-card">
+                <div class="image-back">
+                  <img src="../assets/images/workout/bent-over-row.gif" alt="bent-over-row-gif">
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="desc">
             <p>
               A strong back is essential for maintaining good posture, balance,
@@ -213,15 +260,25 @@
         </div>
       </section>
 
+
       <section id="chest" class="workout-section">
         <h2>Chest Exercise</h2>
         <div class="grids">
-          <div class="image">
-            <img
-              src="../assets/images/workout/bench-press.jpg"
-              alt="bench press"
-            />
+          <div class="flip-container">
+            <div class="flip-card">
+              <div class="front-card">
+                <div class="image">
+                  <img src="../assets/images/workout/bench-press.jpg" alt="bench press"/>
+                </div>
+              </div>
+              <div class="back-card">
+                <div class="image-back">
+                  <img src="../assets/images/workout/bench-press.gif" alt="benc-press-gif">
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="desc">
             <p>
               Building a strong chest not only enhances upper body strengthbut
@@ -256,12 +313,25 @@
         </div>
       </section>
 
+
       <section id="abs" class="workout-section">
         <h2>Abs Exercise</h2>
         <div class="grids">
-          <div class="image">
-            <img src="../assets/images/workout/plank.jpg" alt="plank" />
+          <div class="flip-container">
+            <div class="flip-card">
+              <div class="front-card">
+                <div class="image">
+                  <img src="../assets/images/workout/plank.jpg" alt="plank" />
+                </div>
+              </div>
+              <div class="back-card">
+                <div class="image-back">
+                  <img src="../assets/images/workout/plank.gif" alt="plank-gif">
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="desc">
             <p>
               A strong core is essential for maintaining balance, stability, and
@@ -295,17 +365,27 @@
         </div>
       </section>
 
+
       <section id="cool-down" class="workout-section">
         <h2>Cooling Down</h2>
         <div class="grids">
-          <div class="image">
-            <img
-              src="../assets/images/workout/deep-breathing.jpg"
-              alt="Deep Breathing"
-            />
+          <div class="flip-container">
+            <div class="flip-card">
+              <div class="front-card">
+                <div class="image">
+                  <img src="../assets/images/workout/deep-breathing.jpg" alt="Deep Breathing"/>
+                </div>
+              </div>
+              <div class="back-card">
+                <div class="image-back">
+                  <img src="../assets/images/workout/cooling-down.gif" alt="cooling-down-gif">
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="desc">
-            <h5>Why do we need to cooling down?</h5>
+            <h5>Why do we need to cooling down after exercise?</h5>
             <p>
               Cooling down after exercise is an essential practice that many
               people tend to overlook. It serves several important purposes for
@@ -323,6 +403,7 @@
           </div>
         </div>
       </section>
+      
     </div>
 
     <div id="footer-placeholder"></div>
