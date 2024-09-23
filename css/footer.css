@@ -1,94 +1,92 @@
-
 /* Footer */
 footer {
-    background-color: #3db72d;
-    color: #fff;
-    padding: 20px 0;
-    margin-top: 100px;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footer-logo {
-    width: 150px;
-  }
-  
-  .footer-links h4,
-  .company-info h4,
-  .Call-Us h4 {
-    font-size: 1.2em;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    color: #ffffff;
-  }
+  background-color: #3db72d;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 100px;
+  position: relative;
+}
 
-  .company-info h5 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-  }
-  
-  .footer-links ul li,
-  .company-info p {
-    margin-bottom: 15px;
-  }
-  
-  .footer-links ul li a,
-  .footer-bottom a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-links ul li a:hover,
-  .footer-bottom a:hover {
-    color: #000;
-    text-decoration: underline;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 30px;
-    color: #fff;
-  }
-  
-  .footer-bottom p {
-    margin: 5px 0;
-    font-size: 0.9em;
-  }
-  
-  .footer-bottom a {
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .Call-icons {
-    display: flex;
-    flex-direction: column;
-    /* gap: 0px;  */
-  }
-  
-  .Call-icons a{
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-  }
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  .Call-icons i{
-    margin-right: 8px;
-  }
+.footer-logo {
+  width: 150px;
+}
 
-  
-  .Call-Us h4 {
-    font-size: 1.2em;
-    color: #fff;
-    margin-bottom: 20px;
-  }
-  
+.footer-links h4,
+.company-info h4,
+.Call-Us h4 {
+  font-size: 1.2em;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.company-info h5 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.footer-links ul li,
+.company-info p {
+  margin-bottom: 15px;
+}
+
+.footer-links ul li a,
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover,
+.footer-bottom a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.footer-bottom a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Call-icons {
+  display: flex;
+  flex-direction: column;
+  /* gap: 0px;  */
+}
+
+.Call-icons a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.Call-icons i {
+  margin-right: 8px;
+}
+
+.Call-Us h4 {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 20px;
+}

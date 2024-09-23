@@ -27,6 +27,7 @@ body {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
+  position: flex;
 }
 
 .left-navbar a {
