@@ -1,0 +1,46 @@
+{
+  "sportsEvents": [
+    {
+      "title": "Soccer Tournament 2024",
+      "description": "The biggest football event held every four years.",
+      "date": "2024-06-10",
+      "location": "USA",
+      "sport": "Soccer"
+    },
+    {
+      "title": "Ultra Marathon 2024",
+      "description": "The global multi-sport event featuring summer sports.",
+      "date": "2024-07-26",
+      "location": "Paris, France",
+      "sport": "Marathon"
+    },
+    {
+      "title": "NBA Finals 2024",
+      "description": "The championship series of the National Basketball Association.",
+      "date": "2024-06-02",
+      "location": "USA",
+      "sport": "Basketball"
+    },
+    {
+      "title": "Tennis Grand Slam 2024",
+      "description": "The most prestigious tennis tournament in the world.",
+      "date": "2024-09-15",
+      "location": "London, UK",
+      "sport": "Tennis"
+    },
+    {
+      "title": "Healthy Walk 2024",
+      "description": "The championship series of the National Basketball Association.",
+      "date": "2024-06-02",
+      "location": "USA",
+      "sport": "Walk"
+    },
+    {
+      "title": "Badminton Tournament 2024",
+      "description": "The most prestigious tennis tournament in the world.",
+      "date": "2024-09-15",
+      "location": "London, UK",
+      "sport": "Badminton"
+    }
+  ]
+}

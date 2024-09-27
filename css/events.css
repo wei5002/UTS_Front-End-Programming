@@ -1,0 +1,85 @@
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 40px 0;
+  margin-top: 80px;
+  font-family: "Roboto", sans-serif;
+}
+
+.event-box {
+  width: 45%;
+  height: 250px;
+  perspective: 1000px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.event-box-hot {
+  background-color: #ffcc00;
+  border: 2px solid #ff9900;
+  box-shadow: 5px 5px 30px 10px rgba(255, 153, 0, 0.5);
+}
+
+/* Styling untuk bagian dalam kotak events */
+.event-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d; /* buet efek flip */
+}
+
+.event-box:hover .event-box-inner {
+  transform: rotateY(180deg); /* Rotasi saat hover */
+}
+
+.event-box-front,
+.event-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.event-box-back .event-details p {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.event-box-front img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.event-box-front h2 {
+  font-size: 1.8em;
+  margin: 0;
+  font-weight: 700;
+}
+
+.event-box-back {
+  transform: rotateY(180deg);
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.event-details {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1em;
+}
+
+.event-box:hover .event-details {
+  opacity: 1;
+}

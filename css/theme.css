@@ -8,6 +8,14 @@ body {
   background: #fff;
 }
 
+.navbar-biasa {
+  background-color: #ffffff;
+}
+
+.checkbtn {
+  color: #37ad28;
+}
+
 .content {
   background-color: #ffffff;
   color: #333;
@@ -166,4 +174,12 @@ body.dark-mode .content-container .workout-section {
 body.dark-mode .right-section h3 {
   color: #ffffff;
   background-color: #565656;
+}
+
+body.dark-mode .checkbtn {
+  color: rgb(255, 255, 255);
+}
+
+body.dark-mode .navbar-biasa {
+  background-color: #4f4e4e;
 }

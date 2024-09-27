@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitSteps: Upcoming Events</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/backToTopButton.css" />
+    <link rel="stylesheet" href="../css/events.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
   </head>
   <body>
     <!-- TOMBOL Back to Top -->
@@ -18,24 +24,8 @@
         id="backToTopImg"
       />
     </button>
-    <nav id="navbar">
-      <a href="index.html" id="logo">
-        <img src="../assets/images/logo.png" alt="FitSteps Logo" />
-      </a>
-      <div class="navbar-biasa">
-        <a href="index.html">Home</a>
-        <a href="nav-tips-workout.html">Tips & Workout</a>
-        <a href="nav-trendy-shoes.html">Trendy Shoes</a>
-        <a href="Health Benefits.html">Health Benefits</a>
-        <a href="Contact Us.html">Contact Us</a>
-        <a href="events.html">Upcoming Events</a>
-        <!-- Tombol Mode Terang/Gelap -->
-        <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
-      </div>
-      <a href="index.html" id="moto">
-        <img src="../assets/images/moto.png" alt="FitSteps Moto" />
-      </a>
-    </nav>
+
+    <div id="navbar-placeholder"></div>
 
     <div class="video-container">
       <video id="background-video" autoplay muted loop>
@@ -47,11 +37,11 @@
     <div class="content">
       <h1>Welcome to FitSteps: Upcoming Events!</h1>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, nam
-        facere. In, animi maxime voluptate dicta, nam perferendis repudiandae
-        magnam possimus sint voluptas veritatis illum quas optio cum voluptatem
-        deleniti.
+        Explore the latest events in the world of sports. Stay updated with the
+        biggest competitions and exciting events across various sports
+        disciplines.
       </p>
+      <div class="event-container" id="events-container"></div>
     </div>
 
     <div id="footer-placeholder"></div>
@@ -59,5 +49,6 @@
     <script src="../js/theme-toggle.js"></script>
     <script src="../js/backToTopButton.js"></script>
     <script src="../js/footer.js"></script>
+    <script src="../js/navbar.js"></script>
   </body>
 </html>
