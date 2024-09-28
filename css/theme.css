@@ -183,3 +183,28 @@ body.dark-mode .checkbtn {
 body.dark-mode .navbar-biasa {
   background-color: #4f4e4e;
 }
+
+body.dark-mode section h2 {
+  color: #ffffff;
+}
+
+body.dark-mode section h3 {
+  color: #37ad28;
+}
+
+body.dark-mode .event-container table {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+body.dark-mode tbody tr:hover {
+  background-color: #505050;
+}
+
+body.dark-mode tbody tr:nth-child(even) {
+  background-color: #555555;
+}
+
+body.dark-mode td::before {
+  color: #ffffff;
+}

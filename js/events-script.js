@@ -40,56 +40,29 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Fungsi untuk ambil data dari API
-async function fetchSportsEvents() {
-  try {
-    const response = await fetch("../data/sports_events.json");
+document.addEventListener("DOMContentLoaded", function () {
+  // Mengambil data dari events.json
+  fetch("../data/events.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const tableBody = document.getElementById("event-table");
+      let rows = "";
 
-    const data = await response.json();
-    const eventsContainer = document.getElementById("events-container");
+      // Loop melalui setiap event dan buat baris tabel dengan data-label untuk mobile view
+      data.events.forEach((event) => {
+        rows += `
+          <tr>
+            <td data-label="Date">${event.date}</td>
+            <td data-label="Event Name">${event.eventName}</td>
+            <td data-label="Category">${event.category}</td>
+            <td data-label="Event Type">${event.eventType}</td>
+            <td data-label="Location">${event.location}</td>
+          </tr>
+        `;
+      });
 
-    data.sportsEvents.forEach((event, index) => {
-      const eventBox = document.createElement("div");
-      eventBox.classList.add("event-box");
-
-      // Tambahkan kelas 'event-box-hot' untuk dua events teratas
-      if (index < 2) {
-        eventBox.classList.add("event-box-hot");
-      }
-
-      const eventBoxInner = document.createElement("div");
-      eventBoxInner.classList.add("event-box-inner");
-
-      // Bagian depan kotak events
-      const eventBoxFront = document.createElement("div");
-      eventBoxFront.classList.add("event-box-front");
-      eventBoxFront.innerHTML = `
-              <img src="../assets/images/sports-logos/${event.sport.toLowerCase()}-logo.jpg" alt="${
-        event.sport
-      } Logo" />
-              <h2>${event.title}</h2>
-            `;
-
-      const eventBoxBack = document.createElement("div");
-      eventBoxBack.classList.add("event-box-back");
-      eventBoxBack.innerHTML = `
-              <div class="event-details">
-                <p><strong>Date:</strong> ${event.date}</p>
-                <p><strong>Location:</strong> ${event.location}</p>
-                <p>${event.description}</p>
-              </div>
-            `;
-
-      eventBoxInner.appendChild(eventBoxFront);
-      eventBoxInner.appendChild(eventBoxBack);
-      eventBox.appendChild(eventBoxInner);
-
-      eventsContainer.appendChild(eventBox);
-    });
-  } catch (error) {
-    console.error("Error fetching sports events:", error);
-  }
-}
-
-// Panggil fungsi acara
-fetchSportsEvents();
+      // Menambahkan baris ke tabel
+      tableBody.innerHTML = rows;
+    })
+    .catch((error) => console.error("Error fetching the events:", error));
+});

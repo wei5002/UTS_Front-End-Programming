@@ -25,26 +25,61 @@
       />
     </button>
 
-    <div id="navbar-placeholder"></div>
+    <nav id="navbar">
+      <input type="checkbox" id="check" />
 
-    <div class="video-container">
-      <video id="background-video" autoplay muted loop>
-        <source src="../assets/videos/video-events.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
 
-    <div class="content">
-      <h1>Welcome to FitSteps: Upcoming Events!</h1>
+      <a href="index.html" id="logo"
+        ><img src="../assets/images/logo.png" alt="FitSteps Logo"
+      /></a>
+
+      <div class="navbar-biasa">
+        <a href="index.html">Home</a>
+        <a href="nav-tips-workout.html">Tips & Workout</a>
+        <a href="nav-trendy-shoes.html">Trendy Shoes</a>
+        <a href="Health Benefits.html">Health Benefits</a>
+        <a href="Contact Us.html">Contact Us</a>
+        <a href="events.html">Upcoming Events</a>
+
+        <!-- Tombol Mode Terang/Gelap -->
+        <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
+      </div>
+
+      <a href="index.html" id="moto"
+        ><img src="../assets/images/moto.png" alt="FitSteps Moto"
+      /></a>
+    </nav>
+
+    <section>
+      <h2>Sports Event Calendar Indonesia</h2>
+      <h3>Sports Schedule</h3>
       <p>
-        Explore the latest events in the world of sports. Stay updated with the
-        biggest competitions and exciting events across various sports
-        disciplines.
+        "Follow and get various information on the running event calendar for
+        2024 throughout Indonesia. Find events based on location, date, type of
+        event, and running category that matches your interests!"
       </p>
-      <div class="event-container" id="events-container"></div>
-    </div>
+
+      <div class="event-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Event Name</th>
+              <th>Category</th>
+              <th>Event Type</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody id="event-table"></tbody>
+        </table>
+      </div>
+    </section>
 
     <div id="footer-placeholder"></div>
+
     <script src="../js/events-script.js"></script>
     <script src="../js/theme-toggle.js"></script>
     <script src="../js/backToTopButton.js"></script>
