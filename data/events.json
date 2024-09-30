@@ -1,0 +1,389 @@
+{
+  "events": [
+    {
+      "date": "7 January 2024",
+      "eventName": "Kaltim Post Fun Run – Samarinda",
+      "category": "5K",
+      "eventType": "Fun Run",
+      "location": "Samarinda"
+    },
+    {
+      "date": "11 January - 12 February 2024",
+      "eventName": "Virtual Run Valentine's Day",
+      "category": "5K",
+      "eventType": "Fun Run",
+      "location": "Anywhere"
+    },
+    {
+      "date": "17 January 2024",
+      "eventName": "One VR – SIAP 2024",
+      "category": "10K",
+      "eventType": "Virtual Run",
+      "location": "Anywhere"
+    },
+    {
+      "date": "20 January - 11 February 2024",
+      "eventName": "One VR – Pelari Nusantara",
+      "category": "10K",
+      "eventType": "Virtual Run",
+      "location": "Anywhere"
+    },
+    {
+      "date": "21 January 2024",
+      "eventName": "Gandus Trail Run",
+      "category": "5K/10K/21K",
+      "eventType": "Trail Run",
+      "location": "Palembang"
+    },
+    {
+      "date": "21 January 2024",
+      "eventName": "Geo Heritage Cross Country Gunung Ireng",
+      "category": "7K",
+      "eventType": "Trail Run",
+      "location": "Gunung Kidul"
+    },
+    {
+      "date": "28 January 2024",
+      "eventName": "Asta Run 2.0",
+      "category": "7K",
+      "eventType": "Road Run",
+      "location": "Klaten"
+    },
+    {
+      "date": "28 January 2024",
+      "eventName": "Grid Cardio Rush",
+      "category": "5K/10K",
+      "eventType": "Road Run",
+      "location": "Tangerang"
+    },
+    {
+      "date": "28 January 2024",
+      "eventName": "Imigrasi Run",
+      "category": "5K/10K",
+      "eventType": "Road Run",
+      "location": "Jakarta"
+    },
+    {
+      "date": "28 January 2024",
+      "eventName": "Kaltim Post Fun Fest",
+      "category": "6K",
+      "eventType": "Road Run",
+      "location": "Balikpapan"
+    },
+    {
+      "date": "28 January 2024",
+      "eventName": "Sriwijaya Lampung Run",
+      "category": "5K/10K",
+      "eventType": "Hybrid Run",
+      "location": "Bandar Lampung"
+    },
+    {
+      "date": "5 February 2024",
+      "eventName": "Basketball Tournament U18",
+      "category": "Tournament",
+      "eventType": "Basketball",
+      "location": "Jakarta"
+    },
+    {
+      "date": "12 February 2024",
+      "eventName": "Football Championship 2024",
+      "category": "League",
+      "eventType": "Football",
+      "location": "Surabaya"
+    },
+    {
+      "date": "15 February 2024",
+      "eventName": "Badminton Open Championship",
+      "category": "Singles/Doubles",
+      "eventType": "Badminton",
+      "location": "Bali"
+    },
+    {
+      "date": "22 February 2024",
+      "eventName": "Tennis Grand Slam",
+      "category": "Singles/Doubles",
+      "eventType": "Tennis",
+      "location": "Bandung"
+    },
+    {
+      "date": "1 March 2024",
+      "eventName": "Volleyball League Finals",
+      "category": "Tournament",
+      "eventType": "Volleyball",
+      "location": "Medan"
+    },
+    {
+      "date": "10 March 2024",
+      "eventName": "Cycling Festival 2024",
+      "category": "30K/60K",
+      "eventType": "Cycling",
+      "location": "Yogyakarta"
+    },
+    {
+      "date": "20 March 2024",
+      "eventName": "Martial Arts Open Championship",
+      "category": "Various Styles",
+      "eventType": "Martial Arts",
+      "location": "Semarang"
+    },
+    {
+      "date": "28 March 2024",
+      "eventName": "Swimming Gala 2024",
+      "category": "Various Events",
+      "eventType": "Swimming",
+      "location": "Jakarta"
+    },
+    {
+      "date": "15 April 2024",
+      "eventName": "Ultimate Frisbee Tournament",
+      "category": "Team",
+      "eventType": "Frisbee",
+      "location": "Surabaya"
+    },
+    {
+      "date": "22 April 2024",
+      "eventName": "Rock Climbing Challenge",
+      "category": "Individual/Team",
+      "eventType": "Climbing",
+      "location": "Bandung"
+    },
+    {
+      "date": "5 May 2024",
+      "eventName": "Surfing Competition",
+      "category": "Open",
+      "eventType": "Surfing",
+      "location": "Bali"
+    },
+    {
+      "date": "12 May 2024",
+      "eventName": "Karate Championship",
+      "category": "Various Categories",
+      "eventType": "Martial Arts",
+      "location": "Jakarta"
+    },
+    {
+      "date": "19 May 2024",
+      "eventName": "Athletics Open Meet",
+      "category": "Various Events",
+      "eventType": "Athletics",
+      "location": "Surabaya"
+    },
+    {
+      "date": "26 May 2024",
+      "eventName": "Rugby Tournament 2024",
+      "category": "Team",
+      "eventType": "Rugby",
+      "location": "Bali"
+    },
+    {
+      "date": "2 June 2024",
+      "eventName": "Field Hockey Championship",
+      "category": "Tournament",
+      "eventType": "Field Hockey",
+      "location": "Jakarta"
+    },
+    {
+      "date": "9 June 2024",
+      "eventName": "Table Tennis Open",
+      "category": "Singles/Doubles",
+      "eventType": "Table Tennis",
+      "location": "Yogyakarta"
+    },
+    {
+      "date": "16 June 2024",
+      "eventName": "Baseball League",
+      "category": "Open",
+      "eventType": "Baseball",
+      "location": "Surabaya"
+    },
+    {
+      "date": "23 June 2024",
+      "eventName": "Cricket Tournament 2024",
+      "category": "League",
+      "eventType": "Cricket",
+      "location": "Bandung"
+    },
+    {
+      "date": "30 June 2024",
+      "eventName": "Gymnastics Championship",
+      "category": "Individual/Group",
+      "eventType": "Gymnastics",
+      "location": "Jakarta"
+    },
+    {
+      "date": "7 July 2024",
+      "eventName": "Sailing Regatta",
+      "category": "Open",
+      "eventType": "Sailing",
+      "location": "Bali"
+    },
+    {
+      "date": "14 July 2024",
+      "eventName": "Motocross Championship",
+      "category": "Open",
+      "eventType": "Motocross",
+      "location": "Jakarta"
+    },
+    {
+      "date": "21 July 2024",
+      "eventName": "Futsal League Finals",
+      "category": "Tournament",
+      "eventType": "Futsal",
+      "location": "Medan"
+    },
+    {
+      "date": "28 July 2024",
+      "eventName": "Badminton World Series",
+      "category": "International",
+      "eventType": "Badminton",
+      "location": "Surabaya"
+    },
+    {
+      "date": "4 August 2024",
+      "eventName": "Mixed Martial Arts Championship",
+      "category": "Various Styles",
+      "eventType": "MMA",
+      "location": "Bandung"
+    },
+    {
+      "date": "11 August 2024",
+      "eventName": "Tennis Open Championship",
+      "category": "Singles/Doubles",
+      "eventType": "Tennis",
+      "location": "Jakarta"
+    },
+    {
+      "date": "18 August 2024",
+      "eventName": "Yoga Festival",
+      "category": "Wellness",
+      "eventType": "Yoga",
+      "location": "Bali"
+    },
+    {
+      "date": "25 August 2024",
+      "eventName": "Pilates Championship",
+      "category": "Open",
+      "eventType": "Pilates",
+      "location": "Yogyakarta"
+    },
+    {
+      "date": "1 September 2024",
+      "eventName": "Adventure Race 2024",
+      "category": "Team",
+      "eventType": "Adventure",
+      "location": "Bandung"
+    },
+    {
+      "date": "8 September 2024",
+      "eventName": "Triathlon Championship",
+      "category": "Individual",
+      "eventType": "Triathlon",
+      "location": "Surabaya"
+    },
+    {
+      "date": "15 September 2024",
+      "eventName": "Esports Tournament 2024",
+      "category": "Gaming",
+      "eventType": "Esports",
+      "location": "Jakarta"
+    },
+    {
+      "date": "22 September 2024",
+      "eventName": "Winter Sports Festival",
+      "category": "Various",
+      "eventType": "Winter Sports",
+      "location": "Bali"
+    },
+    {
+      "date": "29 September 2024",
+      "eventName": "Dodgeball Tournament",
+      "category": "Team",
+      "eventType": "Dodgeball",
+      "location": "Medan"
+    },
+    {
+      "date": "6 October 2024",
+      "eventName": "Billiards Championship",
+      "category": "Open",
+      "eventType": "Billiards",
+      "location": "Jakarta"
+    },
+    {
+      "date": "13 October 2024",
+      "eventName": "Snooker Tournament",
+      "category": "Open",
+      "eventType": "Snooker",
+      "location": "Yogyakarta"
+    },
+    {
+      "date": "20 October 2024",
+      "eventName": "Rugby World Cup Qualifiers",
+      "category": "International",
+      "eventType": "Rugby",
+      "location": "Bandung"
+    },
+    {
+      "date": "27 October 2024",
+      "eventName": "Horse Riding Championship",
+      "category": "Open",
+      "eventType": "Equestrian",
+      "location": "Bali"
+    },
+    {
+      "date": "3 November 2024",
+      "eventName": "Shooting Sports Championship",
+      "category": "Open",
+      "eventType": "Shooting",
+      "location": "Jakarta"
+    },
+    {
+      "date": "10 November 2024",
+      "eventName": "Skateboarding Championship",
+      "category": "Open",
+      "eventType": "Skateboarding",
+      "location": "Surabaya"
+    },
+    {
+      "date": "17 November 2024",
+      "eventName": "Ultimate Frisbee World Cup",
+      "category": "International",
+      "eventType": "Frisbee",
+      "location": "Yogyakarta"
+    },
+    {
+      "date": "24 November 2024",
+      "eventName": "Darts Championship",
+      "category": "Open",
+      "eventType": "Darts",
+      "location": "Medan"
+    },
+    {
+      "date": "1 December 2024",
+      "eventName": "Dance Festival",
+      "category": "Various Styles",
+      "eventType": "Dance",
+      "location": "Jakarta"
+    },
+    {
+      "date": "8 December 2024",
+      "eventName": "Karate World Cup",
+      "category": "International",
+      "eventType": "Martial Arts",
+      "location": "Bali"
+    },
+    {
+      "date": "15 December 2024",
+      "eventName": "Athletics World Championship",
+      "category": "International",
+      "eventType": "Athletics",
+      "location": "Surabaya"
+    },
+    {
+      "date": "22 December 2024",
+      "eventName": "End of Year Charity Run",
+      "category": "5K/10K",
+      "eventType": "Fun Run",
+      "location": "Jakarta"
+    }
+  ]
+}
