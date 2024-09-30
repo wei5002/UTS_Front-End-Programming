@@ -227,10 +227,11 @@ p, h3, ul li {
     display: block;
     position: fixed;
     font-size: 1.35rem;
-    top: 100px;
-    left: 2px;
+    top: 120px;
+    left: 30px;
     z-index: 1001;
     cursor: pointer;
+    
   }
 
   .isi{
@@ -244,8 +245,8 @@ p, h3, ul li {
 
   .navbar-data {
     position: fixed;
-    top: 60px;
-    left: 0;
+    top: 120px;
+    left: 20px;
     width: 200px;
     height: 335px;
     padding: 0rem;
