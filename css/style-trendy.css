@@ -13,6 +13,11 @@
   src: url('../assets/fonts/Louis George Cafe.ttf') format(truetype);
 }
 
+@font-face {
+  font-family: 'Market';
+  src: url('../assets/fonts/Market_Deco.ttf') format(truetype);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +32,10 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* TRENDY SHOES */
@@ -76,51 +85,50 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
+  margin: 20px 20px;
 }
 
 .shoe-layout {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  max-width: 900px;
   padding-top: 25px;
   margin-bottom: 25px;
+  border-radius: 50px;
+  box-shadow: 5px 3px 5px rgb(0,0,0, 0.5), -5px 0px 5px rgb(0,0,0, 0.5);
 }
 
 .left-section {
   display: flex;
   justify-content: flex-start;
-  padding-left: 50px;
 }
 
 .portrait-img {
-  min-width: 90%;
-  max-width: 90%;
+  margin-left: 50px;
+  width: 270px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 50px;
   min-width: 225px;
 }
 
 .right-section {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  padding-right: 100px;
+  align-items: center;
   padding-left: 10px;
   flex-wrap: wrap;
-  width: 75%;
-  max-width: 900px;
+  overflow: hidden;
 }
 
 .right-section h3 {
-  background-color: rgb(229, 226, 226);
   border-radius: 10px;
   text-align: center;
   flex-wrap: wrap;
   width: 100%;
   max-width: 900px;
   font-family: 'Cafe', sans-serif;
+  font-size: 40px;
 }
 
 .rating {
@@ -130,7 +138,7 @@ body {
 }
 
 .rating-text {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .rating-icon img {
@@ -144,7 +152,10 @@ body {
 .shoe-images {
   display: flex;
   flex-direction: row;
-  width: 500px;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 50px;
 }
 
 .shoe-images img {
@@ -153,9 +164,9 @@ body {
 }
 
 .description {
-  font-size: 14px;
-  width: 100%;
-  margin-bottom: 5px;
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 30px;
 }
 
 .disclaimer {
@@ -163,4 +174,14 @@ body {
   color: rgb(94, 93, 93);
   padding-bottom: 25px;
   font-size: 12px;
+}
+
+@media (max-width: 768px){
+  .shoe-layout{
+    flex-direction: column;
+  }
+
+  .shoe-images{
+    gap: 0;
+  }
 }

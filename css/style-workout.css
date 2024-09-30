@@ -68,15 +68,21 @@ body {
 
 .grids {
   display: flex;
+  align-items: center;
   flex-direction: row;
   gap: 30px;
+}
+
+@media (max-width: 768px){
+  .grids {
+    flex-direction: column;
+  }
 }
 
 .flip-container{
   position: relative;
   min-width: 200px;
   height: 200px;
-  background-color: #4bde38;
 }
 
 .flip-card{
