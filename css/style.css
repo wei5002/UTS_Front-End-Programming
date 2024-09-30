@@ -11,6 +11,7 @@ body {
 
 #navbar {
   position: sticky;
+  list-style-type: none;
   top: 0;
   left: 0;
   width: 100%;
