@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/backToTopButton.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/navbar.css">
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -41,9 +42,16 @@
     </button>
 
     <nav id="navbar">
+      <input type="checkbox" id="check" />
+
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
       <a href="index.html" id="logo"
         ><img src="../assets/images/logo.png" alt="FitSteps Logo"
       /></a>
+
       <div class="navbar-biasa">
         <a href="index.html">Home</a>
         <a href="nav-tips-workout.html">Tips & Workout</a>
@@ -55,6 +63,7 @@
         <!-- Tombol Mode Terang/Gelap -->
         <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
       </div>
+
       <a href="index.html" id="moto"
         ><img src="../assets/images/moto.png" alt="FitSteps Moto"
       /></a>
