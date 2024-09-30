@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #f3eeee;
+  background: #4bde38;
   color: #000000;
   font-size: 16px;
   line-height: 1.6;
@@ -18,19 +18,19 @@ body {
 
 .left-navbar {
   position: fixed;
-  top: 100px;
+  justify-items: center;
   left: 0;
   width: 200px;
-  height: 100%;
+  height: calc(100vh - 100px);
   background-color: #fff;
   border-right: 1px solid #ddd;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
-  position: flex;
+  box-shadow: 4px 0px 5px rgba(0,0,0,0.1);
 }
 
-.left-navbar a {
+.left-navbar a{
   padding: 10px 20px;
   text-decoration: none;
   font-size: 12px;
@@ -44,19 +44,6 @@ body {
   color: white;
 }
 
-.grids {
-  display: flex;
-  flex-direction: row;
-}
-
-.image img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  margin-right: 20px;
-  border-radius: 10px;
-}
-
 .content-container {
   margin-top: 40px;
   margin-left: 220px;
@@ -64,18 +51,95 @@ body {
 }
 
 .content-container h2 {
+  color: #33bd21;
+  font-size: 30px;
   text-align: center;
 }
 
-.content-container p,
-li {
-  font-size: 12px;
-}
-
 .workout-section {
+  min-height: 300px;
+  max-width: 1060px;
   padding: 20px;
   margin-bottom: 40px;
-  border: 1px solid #ddd;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgb(241, 238, 238);
+  box-shadow: 6px 5px 5px rgba(0,0,0,0.4);
+}
+
+.grids {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+@media (max-width: 768px){
+  .grids {
+    flex-direction: column;
+  }
+}
+
+.flip-container{
+  position: relative;
+  min-width: 200px;
+  height: 200px;
+}
+
+.flip-card{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 2s ease;
+}
+
+.flip-card:hover{
+  transform: rotateY(180deg);
+}
+
+.front-card{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 6px solid white;
+}
+
+.back-card{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.image-back img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 6px solid white;
+}
+
+.desc {
+  max-width: 800px;
+}
+
+.desc h5{
+  font-size: 20px;
+}
+
+.desc li, .desc p {
+  font-size: 15px;
+}
+
+.desc ul{
+  padding-left: 15px;
 }
