@@ -208,3 +208,19 @@ body.dark-mode tbody tr:nth-child(even) {
 body.dark-mode td::before {
   color: #ffffff;
 }
+
+body.dark-mode .navbar-data {
+  background-color: #555555;
+}
+
+body.dark-mode .isi h2 {
+  color: #37ad28;
+}
+
+body.dark-mode .isi p {
+  color: black;
+}
+
+header.dark-mode .menu-icon {
+  color: #ffffff;
+}
