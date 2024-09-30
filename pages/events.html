@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitSteps: Upcoming Events</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/backToTopButton.css" />
+    <link rel="stylesheet" href="../css/events.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
   </head>
   <body>
     <!-- TOMBOL Back to Top -->
@@ -18,10 +24,18 @@
         id="backToTopImg"
       />
     </button>
+
     <nav id="navbar">
-      <a href="index.html" id="logo">
-        <img src="../assets/images/logo.png" alt="FitSteps Logo" />
-      </a>
+      <input type="checkbox" id="check" />
+
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <a href="index.html" id="logo"
+        ><img src="../assets/images/logo.png" alt="FitSteps Logo"
+      /></a>
+
       <div class="navbar-biasa">
         <a href="index.html">Home</a>
         <a href="nav-tips-workout.html">Tips & Workout</a>
@@ -29,35 +43,47 @@
         <a href="Health Benefits.html">Health Benefits</a>
         <a href="Contact Us.html">Contact Us</a>
         <a href="events.html">Upcoming Events</a>
+
         <!-- Tombol Mode Terang/Gelap -->
         <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
       </div>
-      <a href="index.html" id="moto">
-        <img src="../assets/images/moto.png" alt="FitSteps Moto" />
-      </a>
+
+      <a href="index.html" id="moto"
+        ><img src="../assets/images/moto.png" alt="FitSteps Moto"
+      /></a>
     </nav>
 
-    <div class="video-container">
-      <video id="background-video" autoplay muted loop>
-        <source src="../assets/videos/video-events.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-
-    <div class="content">
-      <h1>Welcome to FitSteps: Upcoming Events!</h1>
+    <section>
+      <h2>Sports Event Calendar Indonesia</h2>
+      <h3>Sports Schedule</h3>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, nam
-        facere. In, animi maxime voluptate dicta, nam perferendis repudiandae
-        magnam possimus sint voluptas veritatis illum quas optio cum voluptatem
-        deleniti.
+        "Follow and get various information on the running event calendar for
+        2024 throughout Indonesia. Find events based on location, date, type of
+        event, and running category that matches your interests!"
       </p>
-    </div>
+
+      <div class="event-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Event Name</th>
+              <th>Category</th>
+              <th>Event Type</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody id="event-table"></tbody>
+        </table>
+      </div>
+    </section>
 
     <div id="footer-placeholder"></div>
+
     <script src="../js/events-script.js"></script>
     <script src="../js/theme-toggle.js"></script>
     <script src="../js/backToTopButton.js"></script>
     <script src="../js/footer.js"></script>
+    <script src="../js/navbar.js"></script>
   </body>
 </html>

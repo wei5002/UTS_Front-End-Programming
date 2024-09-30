@@ -8,6 +8,14 @@ body {
   background: #fff;
 }
 
+.navbar-biasa {
+  background-color: #ffffff;
+}
+
+.checkbtn {
+  color: #37ad28;
+}
+
 .content {
   background-color: #ffffff;
   color: #333;
@@ -136,5 +144,67 @@ body.dark-mode #navbar-data {
 }
 
 body.dark-mode #navbar-data ul li a {
+  color: #ffffff;
+}
+
+body.dark-mode .content-container h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .content-container p {
+  color: #ffffff;
+}
+
+body.dark-mode .left-navbar a {
+  color: #ffffff;
+}
+
+body.dark-mode .left-navbar {
+  background-color: #b27e7e;
+}
+
+body.dark-mode .desc {
+  color: #ffffff;
+}
+
+body.dark-mode .content-container .workout-section {
+  background-color: #000000;
+}
+
+body.dark-mode .right-section h3 {
+  color: #ffffff;
+  background-color: #565656;
+}
+
+body.dark-mode .checkbtn {
+  color: rgb(255, 255, 255);
+}
+
+body.dark-mode .navbar-biasa {
+  background-color: #4f4e4e;
+}
+
+body.dark-mode section h2 {
+  color: #ffffff;
+}
+
+body.dark-mode section h3 {
+  color: #37ad28;
+}
+
+body.dark-mode .event-container table {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+body.dark-mode tbody tr:hover {
+  background-color: #505050;
+}
+
+body.dark-mode tbody tr:nth-child(even) {
+  background-color: #555555;
+}
+
+body.dark-mode td::before {
   color: #ffffff;
 }
