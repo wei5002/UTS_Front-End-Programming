@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  z-index: 9999;
   border-radius: 0 0 8px 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding-left: 20px;
@@ -49,7 +49,9 @@
 }
 
 .navbar-biasa a:hover {
-  color: #fff;
+  color: #000000;
+  background-color: #4bde38;
+  transition: opacity 0.3s ease;
 }
 
 .navbar-biasa a::before {
@@ -63,7 +65,7 @@
   border-radius: 8px;
   z-index: -1;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
 }
 
 .navbar-biasa a:hover::before {

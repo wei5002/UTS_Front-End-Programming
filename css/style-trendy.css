@@ -1,21 +1,21 @@
 @font-face {
-  font-family: 'BrightDEMO';
-  src: url('../assets/fonts/Bright DEMO.otf') format(truetype);
+  font-family: "BrightDEMO";
+  src: url("../assets/fonts/Bright DEMO.otf") format(truetype);
 }
 
 @font-face {
-  font-family: 'Rafgins';
-  src: url('../assets/fonts/Rafgins-Regular.ttf') format(truetype);
+  font-family: "Rafgins";
+  src: url("../assets/fonts/Rafgins-Regular.ttf") format(truetype);
 }
 
 @font-face {
-  font-family: 'Cafe';
-  src: url('../assets/fonts/Louis George Cafe.ttf') format(truetype);
+  font-family: "Cafe";
+  src: url("../assets/fonts/Louis George Cafe.ttf") format(truetype);
 }
 
 @font-face {
-  font-family: 'Market';
-  src: url('../assets/fonts/Market_Deco.ttf') format(truetype);
+  font-family: "Market";
+  src: url("../assets/fonts/Market_Deco.ttf") format(truetype);
 }
 
 * {
@@ -32,7 +32,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   height: 100%;
-  display: flex;
+  display: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -54,30 +54,31 @@ body {
   padding: 50px;
 }
 
-#hero h1,h2 {
+#hero h1,
+h2 {
   text-align: left;
   font-size: 2em;
   margin-bottom: 0px;
-  line-height: 1.0;
+  line-height: 1;
 }
 
 #hero h1 {
   color: #fff;
-  font-family: 'Rafgins', sans-serif;
+  font-family: "Rafgins", sans-serif;
   font-size: 5em;
   letter-spacing: 4px;
 }
 
 #hero h2 {
   color: #339926;
-  font-family: 'BrightDEMO', sans-serif;
+  font-family: "BrightDEMO", sans-serif;
   font-size: 3.3em;
   letter-spacing: 2px;
 }
 
 #hero p {
   color: #000;
-  font-family: 'Cafe', sans-serif;
+  font-family: "Cafe", sans-serif;
   font-size: 18px;
 }
 
@@ -86,7 +87,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 80%;
-  margin: 20px 20px;
+  margin: 20px auto;
 }
 
 .shoe-layout {
@@ -96,7 +97,7 @@ body {
   padding-top: 25px;
   margin-bottom: 25px;
   border-radius: 50px;
-  box-shadow: 5px 3px 5px rgb(0,0,0, 0.5), -5px 0px 5px rgb(0,0,0, 0.5);
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5), -5px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .left-section {
@@ -127,7 +128,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
   max-width: 900px;
-  font-family: 'Cafe', sans-serif;
+  font-family: "Cafe", sans-serif;
   font-size: 40px;
 }
 
@@ -176,12 +177,12 @@ body {
   font-size: 12px;
 }
 
-@media (max-width: 768px){
-  .shoe-layout{
+@media (max-width: 768px) {
+  .shoe-layout {
     flex-direction: column;
   }
 
-  .shoe-images{
+  .shoe-images {
     gap: 0;
   }
 }
