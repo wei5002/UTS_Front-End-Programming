@@ -92,20 +92,6 @@ footer {
   margin-bottom: 20px;
 }
 
-@media (max-width: 1200px) {
-    background-color: #3db72d;
-    color: #fff;
-    padding: 20px 0;
-    margin-top: 80px;
-    position: relative;
-    z-index: 14;
-  }
-  
-  .footer-container {
-    justify-content: space-evenly;
-  }
-}
-
 @media (max-width: 991px) {
   .footer {
     padding: 2rem 3%;
@@ -137,5 +123,11 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer-container {
+    justify-content: space-evenly;
   }
 }

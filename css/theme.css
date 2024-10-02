@@ -227,6 +227,8 @@ header.dark-mode .menu-icon {
 
 body.dark-mode #month-filter {
   background-color: #176300;
+  color: white;
+}
 
 body.dark-mode #search-container input {
   background-color: #000000;
