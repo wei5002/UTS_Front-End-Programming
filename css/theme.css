@@ -160,7 +160,7 @@ body.dark-mode .left-navbar a {
 }
 
 body.dark-mode .left-navbar {
-  background-color: #b27e7e;
+  background-color: #696969;
 }
 
 body.dark-mode .desc {
@@ -223,4 +223,9 @@ body.dark-mode .isi p {
 
 header.dark-mode .menu-icon {
   color: #ffffff;
+}
+
+body.dark-mode #month-filter {
+  background-color: #176300;
+  color: white;
 }
