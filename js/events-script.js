@@ -20,6 +20,8 @@ fetch("footer.html")
 
 // Menjalankan kode saat halaman dimuat
 document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("popup").style.display = "none";
+  
   // Memeriksa dan mengaktifkan mode gelap jika disimpan di localStorage
   const darkMode = localStorage.getItem("dark-mode") === "true";
   if (darkMode) {
@@ -38,9 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (darkModeToggle) {
     darkModeToggle.addEventListener("click", toggleDarkMode);
   }
-});
 
-document.addEventListener("DOMContentLoaded", function () {
   // Mengambil data dari events.json
   fetch("../data/events.json")
     .then((response) => response.json())
@@ -63,6 +63,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Menambahkan baris ke tabel
       tableBody.innerHTML = rows;
+
+      document.getElementById("search-btn").addEventListener("click", () => {
+        const location = document.getElementById("location-search").value.toLowerCase();
+        const searchResults = data.events.filter(event =>
+          event.location.toLowerCase().includes(location)
+        );
+
+        const searchResultsTable = document.getElementById("search-results");
+        searchResultsTable.innerHTML = "";
+
+        if(searchResults.length === 0) {
+          searchResults.push({
+            date: "N/A",
+            eventName: "No eventes found.",
+            category: "N/A",
+            eventType: "N/A",
+            location: "Anywhere"
+          });
+        }
+
+        searchResultsTable.innerHTML = searchResults.map(event =>`
+          <tr>
+            <td data-label='Date'>${event.date}</td>
+            <td data-label='Event Name'>${event.eventName}</td>
+            <td data-label='Category'>${event.category}</td>
+            <td data-label='Event Type'>${event.eventType}</td>
+            <td data-label='Location'>${event.location}</td>
+          </tr>
+        `).join("");
+
+        document.getElementById("popup").style.display = "flex";
+      });
+
+      document.getElementById("close-popup").addEventListener("click", () => {
+        document.getElementById("popup").style.display = "none";
+      });
     })
     .catch((error) => console.error("Error fetching the events:", error));
 });

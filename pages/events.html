@@ -62,6 +62,11 @@
         event, and running category that matches your interests!"
       </p>
 
+      <div id="search-container" style="text-align: center; margin-bottom: 20px;">
+        <input type="text" id="location-search" placeholder="Search Your City"/>
+        <button id="search-btn">Search</button>
+      </div>
+
       <div class="event-container">
         <table>
           <thead>
@@ -76,7 +81,27 @@
           <tbody id="event-table"></tbody>
         </table>
       </div>
+
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" id="close-popup">&times;</span>
+          <h3>Search Results</h3>
+          <table id="search-results-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Event Name</th>
+                <th>Category</th>
+                <th>Event Type</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody id="search-results"></tbody>
+          </table>
+        </div>
+      </div>
     </section>
+
 
     <div id="footer-placeholder"></div>
 
