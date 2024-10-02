@@ -18,30 +18,7 @@ fetch("footer.html")
     document.getElementById("footer-placeholder").innerHTML = data;
   });
 
-// Menjalankan kode saat halaman dimuat
 document.addEventListener("DOMContentLoaded", () => {
-  // Memeriksa dan mengaktifkan mode gelap jika disimpan di localStorage
-  const darkMode = localStorage.getItem("dark-mode") === "true";
-  if (darkMode) {
-    document.body.classList.add("dark-mode");
-  }
-
-  // Menangani toggle mode gelap
-  const toggleDarkMode = () => {
-    document.body.classList.toggle("dark-mode");
-    const isDarkMode = document.body.classList.contains("dark-mode");
-    localStorage.setItem("dark-mode", isDarkMode);
-  };
-
-  // Menambahkan event listener pada tombol toggle dark mode
-  const darkModeToggle = document.getElementById("dark-mode-toggle");
-  if (darkModeToggle) {
-    darkModeToggle.addEventListener("click", toggleDarkMode);
-  }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  // Mengambil data dari events.json
   fetch("../data/events.json")
     .then((response) => response.json())
     .then((data) => {
@@ -84,6 +61,39 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         updateTable(filteredEvents);
+      const displayEvents = (events) => {
+        rows = events
+          .map(
+            (event) => `
+          <tr>
+            <td data-label="Date">${event.date}</td>
+            <td data-label="Event Name">${event.eventName}</td>
+            <td data-label="Category">${event.category}</td>
+            <td data-label="Event Type">${event.eventType}</td>
+            <td data-label="Location">${event.location}</td>
+          </tr>
+        `
+          )
+          .join("");
+        tableBody.innerHTML = rows;
+      };
+
+      displayEvents(data.events);
+
+      document.getElementById("search-btn").addEventListener("click", () => {
+        const location = document
+          .getElementById("location-search")
+          .value.toLowerCase();
+
+        const filteredEvents = data.events.filter((event) =>
+          event.location.toLowerCase().includes(location)
+        );
+
+        displayEvents(filteredEvents);
+
+        if (filteredEvents.length === 0) {
+          alert("No events found for the specified location.");
+        }
       });
     })
     .catch((error) => console.error("Error fetching the events:", error));

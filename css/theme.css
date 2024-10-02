@@ -227,5 +227,15 @@ header.dark-mode .menu-icon {
 
 body.dark-mode #month-filter {
   background-color: #176300;
+
+body.dark-mode #search-container input {
+  background-color: #000000;
+}
+
+body.dark-mode #search-container ::placeholder {
+  color: white;
+}
+
+body.dark-mode #location-search {
   color: white;
 }
