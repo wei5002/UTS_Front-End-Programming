@@ -42,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         tableBody.innerHTML = rows;
       };
+
+      // Menampilkan semua acara di awal
       updateTable(events);
 
       monthFilter.addEventListener("change", function () {
@@ -61,35 +63,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         updateTable(filteredEvents);
-      const displayEvents = (events) => {
-        rows = events
-          .map(
-            (event) => `
-          <tr>
-            <td data-label="Date">${event.date}</td>
-            <td data-label="Event Name">${event.eventName}</td>
-            <td data-label="Category">${event.category}</td>
-            <td data-label="Event Type">${event.eventType}</td>
-            <td data-label="Location">${event.location}</td>
-          </tr>
-        `
-          )
-          .join("");
-        tableBody.innerHTML = rows;
-      };
-
-      displayEvents(data.events);
+      });
 
       document.getElementById("search-btn").addEventListener("click", () => {
         const location = document
           .getElementById("location-search")
           .value.toLowerCase();
 
-        const filteredEvents = data.events.filter((event) =>
+        const filteredEvents = events.filter((event) =>
           event.location.toLowerCase().includes(location)
         );
 
-        displayEvents(filteredEvents);
+        updateTable(filteredEvents);
 
         if (filteredEvents.length === 0) {
           alert("No events found for the specified location.");
