@@ -224,3 +224,15 @@ body.dark-mode .isi p {
 header.dark-mode .menu-icon {
   color: #ffffff;
 }
+
+body.dark-mode #search-container input {
+  background-color: #000000;
+}
+
+body.dark-mode #search-container ::placeholder {
+  color: white;
+}
+
+body.dark-mode #location-search {
+  color: white;
+}
