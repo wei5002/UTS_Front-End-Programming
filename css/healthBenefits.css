@@ -115,6 +115,7 @@ body {
 .navbar-data a:hover {
   background-color: #4bde38;
   color: #ffffff;
+  transform: scale(1.055);
 }
 
 .navbar-data a.active{
@@ -227,11 +228,10 @@ p, h3, ul li {
     display: block;
     position: fixed;
     font-size: 1.35rem;
-    top: 120px;
+    top: 130px;
     left: 30px;
     z-index: 1001;
-    cursor: pointer;
-    
+    cursor: pointer;    
   }
 
   .isi{

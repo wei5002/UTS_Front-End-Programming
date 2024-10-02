@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="../css/backToTopButton.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <script>
+    <!-- <script>
       document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll(".left-navbar a").forEach((anchor) => {
           anchor.addEventListener("click", function (e) {
@@ -28,8 +29,9 @@
             }
           });
         });
-      });
-    </script>
+    });
+    </script> -->
+
   </head>
   <body>
     <!-- TOMBOL Back to Top -->
@@ -52,32 +54,39 @@
         ><img src="../assets/images/logo.png" alt="FitSteps Logo"
       /></a>
 
-      <div class="navbar-biasa">
-        <a href="index.html">Home</a>
-        <a href="nav-tips-workout.html">Tips & Workout</a>
-        <a href="nav-trendy-shoes.html">Trendy Shoes</a>
-        <a href="Health Benefits.html">Health Benefits</a>
-        <a href="Contact Us.html">Contact Us</a>
-        <a href="events.html">Upcoming Events</a>
+        <div class="navbar-biasa">
+          <a href="index.html">Home</a>
+          <a href="nav-tips-workout.html">Tips & Workout</a>
+          <a href="nav-trendy-shoes.html">Trendy Shoes</a>
+          <a href="Health Benefits.html">Health Benefits</a>
+          <a href="Contact Us.html">Contact Us</a>
+          <a href="events.html">Upcoming Events</a>
 
-        <!-- Tombol Mode Terang/Gelap -->
-        <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
-      </div>
+          <!-- Tombol Mode Terang/Gelap -->
+          <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
+        </div>
 
       <a href="index.html" id="moto"
         ><img src="../assets/images/moto.png" alt="FitSteps Moto"
       /></a>
     </nav>
 
-    <div class="left-navbar">
-      <a href="#warm-up">Warming-Up</a>
-      <a href="#arm">Arm Exercise</a>
-      <a href="#leg">Leg Exercise</a>
-      <a href="#back">Back Exercise</a>
-      <a href="#chest">Chest Exercise</a>
-      <a href="#abs">ABS Exercise</a>
-      <a href="#cool-down">Cooling-Down</a>
-    </div>
+          
+    <header>
+      <div class="sidebar">
+        <i class="fas fa-bars" id="menu-icons"></i>
+        <!-- <i class="fas fa-times" id="close-btn"></i> -->
+        <div class="left-navbar">
+          <a href="#" onclick="scrollToSection('warm-up')">Warming-Up</a>
+          <a href="#" onclick="scrollToSection('arm')">Arm Exercise</a>
+          <a href="#" onclick="scrollToSection('leg')">Leg Exercise</a>
+          <a href="#" onclick="scrollToSection('back')">Back Exercise</a>
+          <a href="#" onclick="scrollToSection('chest')">Chest Exercise</a>
+          <a href="#" onclick="scrollToSection('abs')">ABS Exercise</a>
+          <a href="#" onclick="scrollToSection('cool-down')">Cooling-Down</a>
+        </div>
+      </div>
+    </header>
 
     <div class="content-container">
 
@@ -420,5 +429,6 @@
     <script src="../js/theme-toggle.js"></script>
     <script src="../js/backToTopButton.js"></script>
     <script src="../js/footer.js"></script>
+    <script src="../js/nav-tips-workout.js"></script>
   </body>
 </html>
