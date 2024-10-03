@@ -93,7 +93,7 @@ body {
   position: fixed;
   top: 100px;
   left: 0;
-  width: 200px;
+  width: 250px;
   height: 100%;
   background-color: #fff;
   border-right: 1px solid #ddd;
@@ -138,8 +138,8 @@ body {
 }
 
 .image img {
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 400px;
   object-fit: cover;
   margin-right: 25px;
   border-radius: 10px;
@@ -147,7 +147,7 @@ body {
 
 .isi {
   margin-left: 250px;
-  padding: 22px;
+  padding: 22px 60px 22px 60px;
 }
 
 h1 {
@@ -157,9 +157,15 @@ h1 {
   margin-top: 100px;
 }
 
+h2{
+  font-size: 30px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
 .data-ada-img,
 .data-no-img {
-  padding: 20px;
+  padding:40px;
   margin-bottom: 40px;
   border: 2px solid #ddd;
   border-radius: 10px;
