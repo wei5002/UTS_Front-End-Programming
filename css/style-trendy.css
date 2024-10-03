@@ -91,6 +91,7 @@ h2 {
 }
 
 .shoe-layout {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -184,5 +185,160 @@ h2 {
 
   .shoe-images {
     gap: 0;
+  }
+}
+
+.close-popup-btn {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: white;
+}
+
+
+.heart-icon {
+  position: absolute; 
+  top: 20px; 
+  left: 50px; 
+  font-size: 24px; 
+  cursor: pointer; 
+  color: black;
+} 
+
+.favorite-btn.liked {
+  color: red;
+}
+
+.heart-icon .far
+{ 
+  color: black; 
+}
+
+.heart-icon .fa
+{ 
+  color: red; 
+}
+
+.fixed-heart-button 
+{ 
+  position: fixed; 
+  right: 35px; 
+  top: 120px; 
+  font-size: 30px; 
+  cursor: pointer; 
+  color: red; 
+  z-index: 1000; 
+  animation: shake 1.8s infinite;
+} 
+
+@keyframes shake {
+  0% {
+    transform: rotateX(-15deg);
+  }
+
+  25% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(-15deg);
+  }
+
+  60% {
+    transform: rotate(10deg);
+  }
+
+  70% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+
+  80% {
+    transform: rotate(-10deg);
+  }
+
+  85% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.favorite-popup { 
+  display: none; 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  width: 90vw;
+  border-radius: 50px;
+  transform: translate(-50%, -50%); 
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px;
+  z-index: 1002;
+}
+
+.favorite-popup h3 {
+  text-align: center;
+  color: #4bde38;
+  font-family: 'Cafe', sans-serif;
+  padding-bottom: 10px;
+}
+
+.favorite-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 5px;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+}
+
+.favorite-list img {
+  display: flex;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50px;
+}
+
+.favorite-list .shoe-name{
+  max-width: 100px;
+  text-align: center;
+  word-wrap: break-word;
+  color: #fff;
+}
+
+.favorite-list::-webkit-scrollbar{
+  display: none;
+}
+
+@media (max-width: 768px){
+
+  .favorite-popup {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    max-height: 78vw;
+    width: 50vw;
+    overflow-y: scroll;
+  }
+
+  .favorite-popup::-webkit-scrollbar{
+    display: none;
+  }
+
+  .favorite-list {
+    flex-direction: column;
+  }
+
+  .favorite-list img {
+    width: 150px;
+    border-radius: 25px;
   }
 }

@@ -68,14 +68,14 @@
 
   .content-container h2 {
     color: #33bd21;
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
   }
 
   .workout-section {
     min-height: 300px;
     max-width: 1060px;
-    padding: 20px;
+    padding: 50px;
     margin-bottom: 40px;
     margin-top: 80px;
     border-radius: 10px;
