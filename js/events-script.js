@@ -1,23 +1,3 @@
-const video = document.getElementById("background-video");
-const volumeBtn = document.getElementById("volume-btn");
-
-function toggleVolume() {
-  if (video.muted) {
-    video.muted = false;
-    volumeBtn.textContent = "🔊";
-  } else {
-    video.muted = true;
-    volumeBtn.textContent = "🔈";
-  }
-}
-
-// Menggunakan fetch untuk memuat file footer.html
-fetch("footer.html")
-  .then((response) => response.text())
-  .then((data) => {
-    document.getElementById("footer-placeholder").innerHTML = data;
-  });
-
 document.addEventListener("DOMContentLoaded", () => {
   fetch("../data/events.json")
     .then((response) => response.json())
