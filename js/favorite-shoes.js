@@ -6,8 +6,8 @@ function saveFavorites() {
 
 function loadFavorites() {
     const storedFavorites = JSON.parse(localStorage.getItem('favoriteShoes')) || [];
-    favoriteShoes = storedFavorites; // Correctly load the favorites into the array
-    updateFavoritePopup(); // Ensure the UI reflects the stored favorites
+    favoriteShoes = storedFavorites; 
+    updateFavoritePopup();
 }
 
 document.querySelectorAll('.heart-icon i').forEach((heartIcon, index) => {
