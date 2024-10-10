@@ -30,8 +30,8 @@ const faders = document.querySelectorAll(".fade-in");
 
 // Menentukan opsi untuk IntersectionObserver
 const appearOptions = {
-  threshold: 0, // Memicu efek saat sedikit bagian dari elemen masuk viewport
-  rootMargin: "0px 0px -100px 0px", // Tambah margin pada bounding box viewport untuk memicu efek 100px sebelum elemen sepenuhnya terlihat
+  threshold: 0,
+  rootMargin: "0px 0px -100px 0px",
 };
 
 // Membuat IntersectionObserver untuk memantau apakah elemen masuk ke dalam viewport
