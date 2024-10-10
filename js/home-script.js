@@ -28,11 +28,13 @@ closeBtn.addEventListener("click", function () {
 // Fungsi Fade-In saat user scroll
 const faders = document.querySelectorAll(".fade-in");
 
+// Menentukan opsi untuk IntersectionObserver
 const appearOptions = {
-  threshold: 0,
-  rootMargin: "0px 0px -100px 0px",
+  threshold: 0, // Memicu efek saat sedikit bagian dari elemen masuk viewport
+  rootMargin: "0px 0px -100px 0px", // Tambah margin pada bounding box viewport untuk memicu efek 100px sebelum elemen sepenuhnya terlihat
 };
 
+// Membuat IntersectionObserver untuk memantau apakah elemen masuk ke dalam viewport
 const appearOnScroll = new IntersectionObserver(function (
   entries,
   appearOnScroll
@@ -46,8 +48,9 @@ const appearOnScroll = new IntersectionObserver(function (
     }
   });
 },
-appearOptions);
+appearOptions); // sebagai opsi observer
 
+// memeriksa elemen yang memiliki kelas 'fade-in'
 faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
